@@ -1,0 +1,40 @@
+{% extends "::layout/layout.html.twig" %}
+{% block title %}Activités Passées - BDE Exia{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-lg-offset-2 col-md-8 col-lg-8">
+            <h2 class="h2">Les activités passées : </h2>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-2 col-lg-2">
+                    <p> <a href="{{ path('nouvelle_activite') }}" class="newactivity">Les activités à venir</a></p>
+                </div>
+                <div class="col-md-2 col-lg-2">
+                    <p> <a href="{{ path('ancienne_activite') }}" class="oldactivity">Les activités passées</a></p>
+                </div>
+            </div>
+
+            <div id="activity" class="col-md-8 col-lg-8">
+                <form class="cssform" action="">
+
+                    <div class="row">
+                        <p href="#">Nom de l'activité</p>
+                        <p><label for="comments">Description :</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-lg-8">
+                                <textarea class="form-control" id="comments" rows="5" cols="25"></textarea></p>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <p align="center"><img src="images/logo.jpg"></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

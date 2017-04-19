@@ -2,18 +2,55 @@ index:
   path:  /
   defaults: { _controller: ProjetWebBDEBundle:Index:index }
 
-bde:
-  path:  /bde
-  defaults: { _controller: ProjetWebBDEBundle:Index:bde }
-
-photo:
-  path:  /photo
-  defaults: { _controller: ProjetWebBDEBundle:Index:photo }
-
 association:
   path:  /association
   defaults: { _controller: ProjetWebBDEBundle:Index:association }
 
+bde:
+  path:  /bde
+  defaults: { _controller: ProjetWebBDEBundle:Index:bde }
+
 contact:
   path:  /contact
   defaults: { _controller: ProjetWebBDEBundle:Index:contact }
+
+mentions_legales:
+  path:  /mentions_legales
+  defaults: { _controller: ProjetWebBDEBundle:Index:mentions_legales }
+  
+photo:
+  path:  /photo
+  defaults: { _controller: ProjetWebBDEBundle:Index:photo }
+
+activite:
+  path:  /activite
+  defaults: { _controller: ProjetWebBDEBundle:Index:activite }
+
+all_activite:
+  path:  /all_activite
+  defaults: { _controller: ProjetWebBDEBundle:Index:all_activite }
+
+ancienne_activite:
+  path:  /ancienne_activite
+  defaults: { _controller: ProjetWebBDEBundle:Index:ancienne_activite }
+
+creation_activite:
+  path:  /creation_activite
+  defaults: { _controller: ProjetWebBDEBundle:Index:creation_activite }
+
+nouvelle_activite:
+  path:  /nouvelle_activite
+  defaults: { _controller: ProjetWebBDEBundle:Index:nouvelle_activite }
+
+proposer_activite:
+  path:  /proposer_activite
+  defaults: { _controller: ProjetWebBDEBundle:Index:proposer_activite }
+
+valitation_activite:
+  path:  /valitation_activite
+  defaults: { _controller: ProjetWebBDEBundle:Index:valitation_activite }
+
+vote_activite:
+  path:  /vote_activite
+  defaults: { _controller: ProjetWebBDEBundle:Index:vote_activite }
+

@@ -32,10 +32,10 @@
                                     <li class="dropdown linav">
                                         <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Activités <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="#">Toutes les activités</a></li>
-                                            <li><a href="#">Proposer une activité</a></li>
-                                            <li><a href="#">Voter pour une activité</a></li>
-                                            <li><a href="#">Créer une activité</a></li>
+                                            <li><a href="{{ path('all_activite') }}">Toutes les activités</a></li>
+                                            <li><a href="{{ path('proposer_activite') }}">Proposer une activité</a></li>
+                                            <li><a href="{{ path('vote_activite') }}">Voter pour une activité</a></li>
+                                            <li><a href="{{ path('creation_activite') }}">Créer une activité</a></li>
                                         </ul>
                                     </li>
                                     <li class="linav"> <a href="{{ path('photo') }}">Photos</a> </li>
@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
-                    <p class="mentions_legales"> <a href="#" class="ment_leg">Mentions légales </a></p>
+                    <p class="mentions_legales"> <a target="_blank" href="{{ path('mentions_legales')}}" class="ment_leg">Mentions légales </a></p>
                 </div>
             </div>
         </footer>

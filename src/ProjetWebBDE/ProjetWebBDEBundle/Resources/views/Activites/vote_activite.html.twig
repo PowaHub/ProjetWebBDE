@@ -1,0 +1,47 @@
+{% extends "::layout/layout.html.twig" %}
+{% block title %}Vote activités - BDE Exia{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-lg-offset-2 col-md-8 col-lg-8">
+            <h2 class="h2">Votez pour les activités que vous souhaitez faire !</h2>
+            <hr>
+
+            <div id="activity" class="col-md-8 col-lg-8">
+                <form class="cssform" action="">
+
+                    <div class="row">
+                        <div class="col-md-8 col-lg-8">
+                            <p><label for="activityname">Nom de l'activité :</label>
+                                <input class="form-control" type="text" id="activityname" value="" /></p>
+
+                            <p><label for="activityplace">Lieu :</label>
+                                <input class="form-control" type="text" id="activityplace" value="" /></p>
+
+                            <p><label for="activityprice">Prix :</label>
+                                <input class="form-control" type="email" id="activityprice" value="" /></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="description" class="col-md-8 col-lg-8">
+                            <p><label for="comments">Description :</label>
+                                <textarea class="form-control" id="comments" rows="5" cols="25"></textarea></p>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <p><label for="comments">Date et heure :</label></br>
+                                <input type="radio" name="activitydate" /> 1</br>
+                                <input type="radio" name="activitydate" /> 2</br>
+                                <input type="radio" name="activitydate" /> 3</br></p>
+                        </div>
+                        <div id="vote" class="col-md-1 col-lg-1">
+                            <input type="submit" class="btn btn-default btn-md" value="Voter" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
