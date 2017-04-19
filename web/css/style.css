@@ -1,0 +1,12 @@
+body {
+	padding-bottom: 40px;
+    padding-top: 60px;
+}
+
+#avatar
+{
+	border: 1px solid #000000;
+	border-radius: 50%;
+
+}
+

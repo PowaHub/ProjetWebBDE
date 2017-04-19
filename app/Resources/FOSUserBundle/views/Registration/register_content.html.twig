@@ -1,0 +1,50 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="row">
+    <div class="span12">
+        <h2>Inscription</h2>
+            <div class="accordion-inner">
+                
+                    <form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
+                        {{ form_widget(form) }}
+                        
+                        Choisissez votre avatar !
+                        <br />
+                        <br />
+
+                        <img src="/projetwebbde/web/img/homme.jpg" alt="homme" class="unselected" id="1" onclick="afficher(1)" height="100" width="100" />
+                        <img src="/projetwebbde/web/img/femme.jpg" alt="femme" class="unselected" id="2" onclick="afficher(2)" height="100" width="100" />
+
+                        
+
+
+                        
+
+                        <br />
+                        <br />
+                        <br />
+                        <input class="btn btn-primary" type="submit" value="{{ 'registration.submit'|trans }}" />
+                    </form>
+               	</div>
+        	
+    </div>
+</div>
+
+<script src="/projetwebbde/web/js/avatar.js"></script>
+
+<style>
+    img {
+        border: 2px solid #000000;
+        border-radius: 50%;
+    }
+
+    .selected {
+        opacity: 1.0;
+
+    }
+
+    .unselected {
+        opacity: 0.5;
+
+    }
+</style>
