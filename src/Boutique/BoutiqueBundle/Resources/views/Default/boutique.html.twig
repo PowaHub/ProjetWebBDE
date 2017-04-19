@@ -18,7 +18,7 @@
 					<div class="col-xs-12"><a href="{{ path('ajout_article') }}" class="btn btn-danger active">Ajouter un article</a></div>
 				
             </div>
-            
+
 			<!-- Boutique -->
             <div class="col-sm-8">
 				<br>
@@ -38,99 +38,28 @@
 				</div>
 
 				<!-- Vignettes contenant les articles -->
+
+				{% for article in articles |slice(0,2)%}
 				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-					<div class="thumbnail">
-						<!-- informations sur l'article -->
-						<div class="caption">
-							<h4>Article 1</h4>
-							<h5>Prix x€</h5>
+						<div class="thumbnail">
+							<!-- informations sur l'article -->
+							<div class="caption">
+								<h4>{{ article.nomArt }} €</h4>
+								<h5>{{ article.prixArt }} €</h5>
+							</div>
+							<!-- illustration principale de l'article -->
+							<div class="produit"><img src="{{ asset(article.media.urlMedia) }}" alt="Image" width="150" height="150"></div>
+							<br>
+							<!-- barre de boutons pour la gestion -->
+							<div class="btn-group-justified btn-group-sm">
+								<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
+								<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
+								<a class="btn btn-danger active produit" role="button" href="">Supprimer</a>
+							</div>
 						</div>
-						<!-- illustration principale de l'article -->
-						<div class="produit"><img src="{{ asset('img/holder.png') }}" alt="Image" width="150" height="150"></div>
-						<br>
-						<!-- barre de boutons pour la gestion -->
-						<div class="btn-group-justified btn-group-sm">
-							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
-							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
-							<a class="btn btn-danger active produit" role="button" href="">Supprimer</a>
-						</div>
-					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-					<div class="thumbnail">
-						<div class="caption">
-							<h4>Article 1</h4>
-							<h5>Prix x€</h5>
-						</div>
-						<div class="produit"><img src="{{ asset('img/holder.png') }}" alt="Image" width="150" height="150"></div>
-						<br>
-						<div class="btn-group-justified btn-group-sm">
-							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
-							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
-							<a class="btn btn-danger active" role="button" href="">Supprimer</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-					<div class="thumbnail">
-						<div class="caption">
-							<h4>Article 1</h4>
-							<h5>Prix x€</h5>
-						</div>
-						<div class="produit"><img src="{{ asset('img/holder.png') }}" alt="Image" width="150" height="150"></div>
-						<br>
-						<div class="btn-group-justified btn-group-sm">
-							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
-							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
-							<a class="btn btn-danger active" role="button" href="">Supprimer</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-					<div class="thumbnail">
-						<div class="caption">
-							<h4>Article 1</h4>
-							<h5>Prix x€</h5>
-						</div>
-						<div class="produit"><img src="{{ asset('img/holder.png') }}" alt="Image" width="150" height="150"></div>
-						<br>
-						<div class="btn-group-justified btn-group-sm">
-							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
-							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
-							<a class="btn btn-danger active" role="button" href="">Supprimer</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-					<div class="thumbnail">
-						<div class="caption">
-							<h4>Article 1</h4>
-							<h5>Prix x€</h5>
-						</div>
-						<div class="produit"><img src="{{ asset('img/holder.png') }}" alt="Image" width="150" height="150"></div>
-						<br>
-						<div class="btn-group-justified btn-group-sm">
-							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
-							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
-							<a class="btn btn-danger active" role="button" href="">Supprimer</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-					<div class="thumbnail">
-						<div class="caption">
-							<h4>Article 1</h4>
-							<h5>Prix x€</h5>
-						</div>
-						<div class="produit"><img src="{{ asset('img/holder.png') }}" alt="Image" width="150" height="150"></div>
-						<br>
-						<div class="btn-group-justified btn-group-sm">
-							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
-							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
-							<a class="btn btn-danger active" role="button" href="">Supprimer</a>
-						</div>
-					</div>
-				</div>
+				{% endfor %}
+
             </div>
 
 			<!-- Panier -->

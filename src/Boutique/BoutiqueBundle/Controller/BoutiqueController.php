@@ -25,7 +25,10 @@ class BoutiqueController extends Controller
 
     public function boutiqueAction()
     {
-        return $this->render('BoutiqueBundle:Default:boutique.html.twig');
+
+        $em = $this->getDoctrine()->getManager();
+        $articles = $em->getRepository('BoutiqueBundle:Article')->findAll();
+        return $this->render('BoutiqueBundle:Default:boutique.html.twig',array("articles"=> $articles));
     }
 
     public function edition_articleAction()
