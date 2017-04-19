@@ -2,21 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b373b066-fa62-4b3e-b982-74f2f13e02f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ArticleData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/CategorieData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ComposerData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/FactureData.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/MediaData.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ProjetWebBDE.iml" afterPath="$PROJECT_DIR$/.idea/ProjetWebBDE.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/app/SymfonyRequirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/check.php" afterPath="$PROJECT_DIR$/app/check.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Controller/BoutiqueController.php" afterPath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Controller/BoutiqueController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Entity/activite.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Entity/commenter_photo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Entity/liker_photo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Entity/participer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Entity/photo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Entity/proposition_activite.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Entity/voter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Repository/activiteRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Repository/commenter_photoRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Repository/liker_photoRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Repository/participerRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Repository/photoRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Repository/proposition_activiteRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Repository/voterRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/ajout_categorie.html.twig" afterPath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/ajout_categorie.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/boutique.html.twig" afterPath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/boutique.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Activites/activite.html.twig" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Activites/activite.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Activites/all_activite.html.twig" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Activites/all_activite.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/style.css" afterPath="$PROJECT_DIR$/web/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/script.js" afterPath="$PROJECT_DIR$/web/js/script.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="boutique.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="boutique.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/boutique.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="357">
+              <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -70,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Article.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Entity/Article.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="496">
-              <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+              <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -131,8 +136,8 @@
         <option value="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/FactureData.php" />
         <option value="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/MediaData.php" />
         <option value="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Controller/BoutiqueController.php" />
-        <option value="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/boutique.html.twig" />
         <option value="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Entity/Article.php" />
+        <option value="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/boutique.html.twig" />
       </list>
     </option>
   </component>
@@ -464,12 +469,12 @@
       <option name="presentableId" value="Default" />
       <updated>1492005488098</updated>
       <workItem from="1492005497900" duration="109000" />
-      <workItem from="1492590714014" duration="13864000" />
+      <workItem from="1492590714014" duration="14077000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13973000" />
+    <option name="totallyTimeSpent" value="14186000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="9" width="1918" height="1030" extended-state="0" />
@@ -715,14 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/boutique.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ArticleData.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -736,7 +733,15 @@
     <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Entity/Article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
-          <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <caret line="53" column="38" lean-forward="false" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/boutique.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
           <folding />
         </state>
       </provider>

@@ -29,7 +29,7 @@
                                     <p align="center"><img src="{{ asset('img/logo.jpg') }}"></p>
                                 </div>
                                 <div id="vote" class="col-md-1 col-lg-1">
-                                    <button type="submit" class="btn btn-default btn-md">S'inscrire</button>
+                                    <button type="submit" class="btn btn-default btn-md" id="popupinscription">S'inscrire</button>
                                 </div>
                             </div>
                         </form>
@@ -64,4 +64,10 @@
             </div>
         </div>
     </div>
+
+    <div id="popupinformation" title="Inscription">
+        <p>Avez vous une remarque à nous soumettre ?</p>
+        <textarea class="form-control" id="textarea" rows="5" cols="25"></textarea>
+    </div>
+    
 {% endblock %}
