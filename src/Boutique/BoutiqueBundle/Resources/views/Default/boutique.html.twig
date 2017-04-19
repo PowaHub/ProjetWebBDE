@@ -10,11 +10,11 @@
 					<div class="col-xs-6 col-md-12 col-lg-6"><strong>Catégories : </strong></div>
 					<div class="col-xs-6 col-md-12 col-lg-6"><a href="{{ path('ajout_categorie') }}" class="btn btn-danger active">Ajouter</a></div>
 					<div class="col-xs-6 col-md-12 col-lg-6"><a href="">Catégorie 1</a></div>
-					<div class="col-xs-6 col-md-12 col-lg-6"><a href="" class="btn btn-danger active">Supprimer</a></div>
+					<div class="col-xs-6 col-md-12 col-lg-6"><a href="" class="btn btn-danger active suppr">Supprimer</a></div>
 					<div class="col-xs-6 col-md-12 col-lg-6"><a href="">Catégorie 2</a></div>
-					<div class="col-xs-6 col-md-12 col-lg-6"><a href="" class="btn btn-danger active">Supprimer</a></div>
+					<div class="col-xs-6 col-md-12 col-lg-6"><a href="" class="btn btn-danger active suppr">Supprimer</a></div>
 					<div class="col-xs-6 col-md-12 col-lg-6"><a href="">Catégorie 3</a></div>
-					<div class="col-xs-6 col-md-12 col-lg-6"><a href="" class="btn btn-danger active">Supprimer</a></div>
+					<div class="col-xs-6 col-md-12 col-lg-6"><a href="" class="btn btn-danger active suppr">Supprimer</a></div>
 					<div class="col-xs-12"><a href="{{ path('ajout_article') }}" class="btn btn-danger active">Ajouter un article</a></div>
 				
             </div>
@@ -52,7 +52,7 @@
 						<div class="btn-group-justified btn-group-sm">
 							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
 							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
-							<a class="btn btn-danger active produit" role="button" href="">Supprimer</a>
+							<a class="btn btn-danger active produit suppr" role="button" href="">Supprimer</a>
 						</div>
 					</div>
 				</div>
@@ -67,7 +67,7 @@
 						<div class="btn-group-justified btn-group-sm">
 							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
 							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
-							<a class="btn btn-danger active" role="button" href="">Supprimer</a>
+							<a class="btn btn-danger active suppr" role="button" href="">Supprimer</a>
 						</div>
 					</div>
 				</div>
@@ -82,7 +82,7 @@
 						<div class="btn-group-justified btn-group-sm">
 							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
 							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
-							<a class="btn btn-danger active" role="button" href="">Supprimer</a>
+							<a class="btn btn-danger active suppr" role="button" href="">Supprimer</a>
 						</div>
 					</div>
 				</div>
@@ -97,7 +97,7 @@
 						<div class="btn-group-justified btn-group-sm">
 							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
 							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
-							<a class="btn btn-danger active" role="button" href="">Supprimer</a>
+							<a class="btn btn-danger active suppr" role="button" href="">Supprimer</a>
 						</div>
 					</div>
 				</div>
@@ -112,7 +112,7 @@
 						<div class="btn-group-justified btn-group-sm">
 							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
 							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
-							<a class="btn btn-danger active" role="button" href="">Supprimer</a>
+							<a class="btn btn-danger active suppr" role="button" href="">Supprimer</a>
 						</div>
 					</div>
 				</div>
@@ -127,7 +127,7 @@
 						<div class="btn-group-justified btn-group-sm">
 							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
 							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
-							<a class="btn btn-danger active" role="button" href="">Supprimer</a>
+							<a class="btn btn-danger active suppr" role="button" href="">Supprimer</a>
 						</div>
 					</div>
 				</div>
@@ -146,5 +146,9 @@
 					</div>
 				</div>
 			</div>
+        </div>
+
+        <div class="popupconfirmation">
+        	<p>Désirez-vous vraiment supprimer cet item ?</p>
         </div>
 {% endblock %}
