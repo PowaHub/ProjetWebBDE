@@ -1,3 +1,11 @@
+boutique:
+    resource: "@BoutiqueBundle/Resources/config/routing.yml"
+    prefix:   /
+
+projet_web_bde:
+    resource: "@ProjetWebBDEBundle/Resources/config/routing.yml"
+    prefix:   /
+
 user:
     resource: "@UserBundle/Resources/config/routing.yml"
     prefix:   /

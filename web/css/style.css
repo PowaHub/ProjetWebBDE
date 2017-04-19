@@ -1,12 +1,429 @@
-body {
-	padding-bottom: 40px;
-    padding-top: 60px;
-}
 
-#avatar
+header
 {
-	border: 1px solid #000000;
-	border-radius: 50%;
+	background-color: rgb(194,36,42);
+}
+
+body 
+{ 
+	padding-top: 50px;
+	background-color: rgb(190,190,190); 
+}
+
+footer
+{
+	background-color: rgb(190,190,190); 
+}
+
+[class*="col"] 
+{ 
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.form-inline 
+{ 
+	margin-top: 20px
+}
+
+.logoentr
+{
+	width: 70%;
+}
+
+.h1
+{
+	text-align: center;
+	color: white;
+	font-size: 4.0em;
+	font-family: Arial;
+	text-shadow: 5px 5px 2px black;
+}
+
+[class="btn btn-default btn-md btnheader"]
+{
+	margin-top: 20px;
+	float: right;
+}
+
+.avatar
+{
+	margin-top: 10px;
+	float: right;
+	margin-right: 30px;
+}
+
+.bonjour
+{
+	margin-top: 10px;
+	float: right;
+	font-size: 18px;
+}
+
+header ul
+{
+	text-align: center;
+}
+
+footer img
+{
+	width: 200px;
+	height: 100px;
+	margin: 20px auto 10px 10px;
+}
+
+footer p
+{
+	margin-top: 100px;
+}
+
+.imgfb
+{
+	float: right;
+	width: 20%;
+	height: 20%;
+}
+.imgtw
+{
+	float: left;
+	width: 20%;
+	height: 20%;
+}
+
+.imgreseausociaux
+{
+	margin-top: 40px;
+}
+
+hr
+{
+	height: 3px;
+	background-color: rgb(194,36,42);
+	color: rgb(194,36,42);
+	border-color: rgb(194,36,42)
+}
+
+.mentions_legales
+{
+	float: right;
+	color: black;
+}
+
+.ment_leg
+{
+	text-decoration: none;
+	color: black;
+}
+
+.research
+{
+	margin-top: 40px;
+}
+
+.bonjour
+{
+	color: white;
 
 }
 
+.activites
+{
+	text-align: justify;
+}
+
+article
+{
+	font-size: 20px;
+	text-align: center;
+}
+
+article img
+{
+	width: 100%
+}
+
+.rowhead
+{
+	background-color: rgb(194,36,42);
+}
+
+
+/* Si on utilise un petit écran (que ce soit avec un ordinateur dans une petite fenêtre ou avec un smartphone), les titres sont réduits */
+@media only screen and (max-width: 320px) {
+
+.logoentr{
+	width: 120%;
+}
+.avatar{
+	display: none;
+}
+h1 { 
+display: none; 
+}
+
+h2{
+font-size: 10vw;
+}
+
+h4{
+	font-size: 8vw;
+}
+
+body {
+	font-size: 5vw;
+}
+footer img{
+	margin: 0;
+}
+footer p{
+	float: left;
+	margin: 0;
+	margin-top: 10px;
+}
+footer a{
+	margin: 0;
+}
+.imgfb{
+	width: 50%;
+}
+.imgtw{
+	width: 50%;
+}
+.imgreseausociaux
+{
+	margin-top: 10px;
+}
+.ment_leg
+{
+	text-decoration: none;
+	color: black;
+}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 540px) {
+.logoentr{
+	width: 120%;
+}
+.avatar{
+	display: none;
+}
+h1 { 
+display: none; 
+}
+h2{
+font-size: 10vw;
+}
+
+h4{
+	font-size: 8vw;
+}
+body {
+	font-size: 5vw;
+}
+footer img{
+	margin: 0;
+}
+footer p{
+	float: left;
+	margin: 0;
+	margin-top: 10px;
+}
+footer a{
+	margin: 0;
+}
+.imgfb{
+	width: 50%;
+}
+.imgtw{
+	width: 50%;
+}
+.imgreseausociaux
+{
+	margin-top: 10px;
+}
+.ment_leg
+{
+	text-decoration: none;
+	color: black;
+}
+}
+
+@media only screen and (min-width: 540px) and (max-width: 768px) {
+footer img{
+	margin: 0;
+}
+footer p{
+	float: left;
+	margin: 0;
+	margin-top: 10px;
+}
+footer a{
+	margin: 0;
+}
+.imgfb{
+	width: 30%;
+}
+.imgtw{
+	width: 30%;
+}
+.imgreseausociaux
+{
+	margin-top: 10px;
+}
+.mentions_legales
+{
+	float: right;
+}
+.ment_leg
+{
+	text-decoration: none;
+	color: black;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+footer img{
+	margin: 0;
+}
+footer p{
+	float: left;
+	margin: 0;
+	margin-top: 10px;
+}
+footer a{
+	margin: 0;
+}
+.imgfb{
+	width: 30%;
+}
+.imgtw{
+	width: 30%;
+}
+.imgreseausociaux
+{
+	margin-top: 10px;
+}
+.mentions_legales
+{
+	float: right;
+	
+}
+.ment_leg
+{
+	text-decoration: none;
+	color: black;
+}
+
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+.imgfb{
+	width: 50%;
+}
+.imgtw{
+	width: 50%;
+}
+}
+
+@media only screen and (min-width: 1200px){
+.imgfb{
+	width: 30%;
+}
+.imgtw{
+	width: 30%;
+}
+
+}
+
+/*pierre*/
+
+.item-holder           /* style du <span> */
+{
+	vertical-align : middle;
+	text-align:center;
+	width:400px;
+	height:400px;
+}
+
+.img-circle
+{
+	box-shadow: 0 0 0 1px rgb(194,36,42);
+	height: 200px;
+	width: 200px;
+}
+
+#myform p
+{
+	width: 300px;
+	clear: left;
+	margin: 0;
+	padding: 5px 0 8px 0;
+	padding-left: 155px;
+}
+
+#myform label
+{
+	font-weight: bold;
+	float: left;
+	margin-left: -155px;
+	width: 150px;
+}
+
+#myform input
+{
+	width: 180px;
+}
+
+#myform textarea{
+	width: 250px;
+	height: 150px;
+}
+
+#description
+{
+	padding-right: 20px;
+}
+
+#vote
+{
+	padding-top: 5%;
+}
+
+#activity
+{
+	border-width: 2px;
+	border-color: rgb(194,36,42);
+}
+
+.newactivity, .oldactivity
+{
+    color: black;
+}
+
+input #terms
+{
+	float: left;
+}
+
+.iconeassoc
+{
+	font-size: 2.5em;
+	color: rgb(194,36,42);
+}
+
+
+/* FRANCOIS */
+.produit
+{
+	text-align: center;
+}
+
+.thumbnail_height {
+	height: 150px;
+}
+
+.thumbnail_height img {
+	margin: auto;
+	max-height: 150px;
+}

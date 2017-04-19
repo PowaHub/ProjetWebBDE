@@ -1,0 +1,82 @@
+{% extends "::layout/layout.html.twig" %}
+{% block title %}Le BDE - BDE Exia{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-lg-offset-2 col-md-8 col-lg-8">
+            <h2 class="h2">Présentation du BDE</h2>
+            <hr>
+
+            <div class="col-md-12 col-lg-12">
+                <h3 class="h3">Qu'est ce que le BDE ?</h3>
+
+                <p>Le Bureau des Elèves est composé de huit membres, qui animent et structurent les différentes sections du BDE. Un bureau physique se trouve sur le campus pour les réunions et le matériel.</p>
+
+                <h3 class="h3">Les membres :</h3>
+                </br>
+
+                <div class="row">
+                    <div class="col-md-3 col-lg-3">
+                            <span class="item-holder">
+                                <p align="center"><img class="img-circle" src="{{ asset('img_bde/alexis_birbalta.jpg') }}">
+                                <h3 align="center">Alexis Birbalta</h3>
+                                <h4>Président</h4></p>
+                            </span>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                            <span class="item-holder">
+                                <p align="center"><img class="img-circle" src="{{ asset('img_bde/alexandre_honig-north.jpg') }}">
+                                <h3 align="center">Alexandre Honig-North</h3>
+                                <h4>Vice-président</h4></p>
+                            </span>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                            <span class="item-holder">
+                                <p align="center"><img class="img-circle" src="{{ asset('img_bde/Piaget.jpg') }}">
+                                <h3 align="center">Fabrice Piaget</h3>
+                                <h4>Secrétaire</h4></p>
+                            </span>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                            <span class="item-holder">
+                                <p align="center"><img class="img-circle" src="{{ asset('img_bde/Menu.jpg') }}">
+                                <h3 align="center">Mathieu Menu</h3>
+                                <h4>Vice-secrétaire</h4></p>
+                            </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-lg-3">
+                            <span class="item-holder">
+                                <p align="center"><img class="img-circle" src="{{ asset('img_bde/Margelidon.jpg') }}">
+                                <h3 align="center">Roland Margelidon</h3>
+                                <h4>Responsable communication</h4></p>
+                            </span>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                            <span class="item-holder">
+                                <p align="center"><img class="img-circle" src="{{ asset('img_bde/Altenburger.jpg') }}">
+                                <h3 align="center">Arnaud Altenburger</h3>
+                                <h4>Vice-responsable communication</h4></p>
+                            </span>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                            <span class="item-holder">
+                                <p align="center"><img class="img-circle" src="{{ asset('img_bde/Roth.jpg') }}">
+                                <h3 align="center">François Roth</h3>
+                                <h4>Trésorier</h4></p>
+                            </span>
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                            <span class="item-holder">
+                                <p align="center"><img class="img-circle" src="{{ asset('img_bde/Lutz.jpg') }}">
+                                <h3 align="center">Victor Lutz</h3>
+                                <h4>Vice-trésorier</h4></p>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

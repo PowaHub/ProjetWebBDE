@@ -1,0 +1,34 @@
+{% extends "::layout/layout.html.twig" %}
+{% block title %}Contact - BDE Exia{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-lg-offset-2 col-md-8 col-lg-8">
+            <h2 class="h2">Contactez-nous !</h2>
+            <hr>
+
+            <form id="myform" class="cssform" action="">
+
+                <p><label for="username">Nom :</label>
+                    <input class="form-control" type="text" id="username" value="" /></p>
+
+                <p><label for="userfirstname">Prénom :</label>
+                    <input class="form-control" type="text" id="userfirstname" value="" /></p>
+
+                <p><label for="emailaddress">Email :</label>
+                    <input class="form-control" type="email" id="emailaddress" value="" /></p>
+
+                <p><label for="comments">Message :</label>
+                    <textarea class="form-control" id="comments" rows="5" cols="25"></textarea></p>
+
+                <p><label for="terms">Conditions g&eacute;n&eacute;rales accept&eacute;es</label>
+                    <input type="checkbox" id="terms" class="boxes" /></p>
+
+                <p><div style="margin-left: 150px;">
+                    <input type="submit" class="btn btn-default" value="Envoyer" />
+                    <input type="reset" class="btn btn-default" value="Reset" />
+                </div></p>
+            </form>
+        </div>
+    </div>
+{% endblock %}

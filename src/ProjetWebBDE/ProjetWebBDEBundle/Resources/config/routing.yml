@@ -1,0 +1,19 @@
+index:
+  path:  /
+  defaults: { _controller: ProjetWebBDEBundle:Index:index }
+
+bde:
+  path:  /bde
+  defaults: { _controller: ProjetWebBDEBundle:Index:bde }
+
+photo:
+  path:  /photo
+  defaults: { _controller: ProjetWebBDEBundle:Index:photo }
+
+association:
+  path:  /association
+  defaults: { _controller: ProjetWebBDEBundle:Index:association }
+
+contact:
+  path:  /contact
+  defaults: { _controller: ProjetWebBDEBundle:Index:contact }

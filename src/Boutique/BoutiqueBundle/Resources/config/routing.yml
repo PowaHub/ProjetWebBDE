@@ -1,0 +1,3 @@
+boutique:
+    path:     /boutique
+    defaults: { _controller: BoutiqueBundle:Boutique:boutique }
