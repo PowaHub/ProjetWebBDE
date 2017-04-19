@@ -5,7 +5,7 @@
         <title>{% block title %}{% endblock %}</title>
         <link rel="stylesheet" href="{{ asset('css/bootstrap-3.3.7-dist/css/bootstrap.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
-        <link rel="stylesheet" href="{{ asset('css/jquery-ui-1.12.1/jquery-ui.css') }}"/>
+        <link rel="stylesheet" href="{{ asset('js/jquery-ui-1.12.1/jquery-ui.css') }}"/>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
@@ -124,10 +124,10 @@
 
     </div>
 
-        <script src="jquery-3.2.0.js"></script>
-        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
-        <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-        <script src="script.js"></script>
+        <script src="{{ asset('js/jquery-3.2.0.js') }}"></script>
+        <script src="{{ asset('js/jquery-ui-1.12.1/jquery-ui.js') }}"></script>
+        <script src="{{ asset('css/bootstrap-3.3.7-dist/js/bootstrap.js') }}"></script>
+        <script src="{{ asset('js/script.js') }}"></script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

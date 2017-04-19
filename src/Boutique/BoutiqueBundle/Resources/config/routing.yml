@@ -1,3 +1,19 @@
+ajout_article:
+    path:     /ajout_article
+    defaults: { _controller: BoutiqueBundle:Boutique:ajout_article }
+
+ajout_categorie:
+    path:     /ajout_categorie
+    defaults: { _controller: BoutiqueBundle:Boutique:ajout_categorie }
+
+article:
+    path:     /article
+    defaults: { _controller: BoutiqueBundle:Boutique:article }
+
 boutique:
     path:     /boutique
     defaults: { _controller: BoutiqueBundle:Boutique:boutique }
+
+edition_article:
+    path:     /edition_article
+    defaults: { _controller: BoutiqueBundle:Boutique:edition_article }
