@@ -2,12 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b373b066-fa62-4b3e-b982-74f2f13e02f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ProjetWebBDE.iml" afterPath="$PROJECT_DIR$/.idea/ProjetWebBDE.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/app/SymfonyRequirements.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/check.php" afterPath="$PROJECT_DIR$/app/check.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Default/bde.html.twig" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Default/bde.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/Altenburger.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/Lutz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/Margelidon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/Menu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/Piaget.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/alexandre_honig-north.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/bde2014.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/birbalta.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/enkview.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/exia4l.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/exialan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/fablab.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/flams.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/flams2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/jni.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/jni1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/jni4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/lan.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/lan2014.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/lan3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/noel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/pizzas.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/redbull.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/remise-diplômes.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/soirée.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/stage.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/img_bde/vie.JPG" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Default/photo.html.twig" afterPath="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Default/photo.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,24 +74,74 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bde.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Default/bde.html.twig">
+      <file leaf-file-name="ArticleData.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ArticleData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            <state relative-caret-position="274">
+              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <folding>
+                <element signature="e#60#109#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Article.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Entity/Article.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticleData.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ArticleData.php">
+      <file leaf-file-name="photo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Entity/photo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-              <folding>
-                <element signature="e#60#109#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="photo.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Default/photo.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1197">
+              <caret line="57" column="113" lean-forward="false" selection-start-line="57" selection-start-column="113" selection-end-line="57" selection-end-column="113" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bde.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Default/bde.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajout_categorie.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/ajout_categorie.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activite.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Entity/activite.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,6 +190,7 @@
         <option value="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Entity/Article.php" />
         <option value="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/boutique.html.twig" />
         <option value="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Default/bde.html.twig" />
+        <option value="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Default/photo.html.twig" />
       </list>
     </option>
   </component>
@@ -332,97 +406,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetWebBDE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetWebBDE" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boutique" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BoutiqueBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetWebBDE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetWebBDE" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boutique" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BoutiqueBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataFixtures" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ORM" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetWebBDE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjetWebBDE" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boutique" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BoutiqueBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -541,18 +525,17 @@
       <updated>1492005488098</updated>
       <workItem from="1492005497900" duration="109000" />
       <workItem from="1492590714014" duration="14132000" />
-      <workItem from="1492630524045" duration="790000" />
+      <workItem from="1492630524045" duration="2595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15031000" />
+    <option name="totallyTimeSpent" value="16836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938188" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -579,13 +562,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ArticleData.php</url>
-          <line>4</line>
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -645,6 +622,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -764,17 +742,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Entity/Media.php" />
-    <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ArticleData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding>
-            <element signature="e#60#109#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Entity/Article.php" />
     <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/boutique.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -785,8 +752,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Default/bde.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="221">
+          <caret line="17" column="33" lean-forward="false" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Resources/views/Default/ajout_categorie.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Entity/activite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ArticleData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="e#60#109#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/Entity/Article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Entity/photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Default/photo.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="57" column="113" lean-forward="false" selection-start-line="57" selection-start-column="113" selection-end-line="57" selection-end-column="113" />
           <folding />
         </state>
       </provider>
