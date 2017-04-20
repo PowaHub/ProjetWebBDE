@@ -13,11 +13,14 @@ class ArticleController extends Controller
     {
         $article = new Article();
 
+        $form = $this->createForm(ArticleType::class, $article);
+
+        $formView = $form->createView();
 
 
-
-
-        return $this->render('UserBundle:Default:ajout_article.html.twig', array(
+        
+        return $this->render('BoutiqueBundle:Default:ajout_article.html.twig', array(
+                'form'=>$formView,
 
             ));
     }

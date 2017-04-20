@@ -19,7 +19,7 @@ class ArticleType extends AbstractType
         $builder->add('nomArt', TextType::class)
             ->add('descriptionArt', TextType::class)
             ->add('prixArt', MoneyType::class, array('scale'=>2, 'currency'=> 'EUR'))
-            ->add('stockArt' NumberType::class)
+            ->add('stockArt', NumberType::class)
             ->add('media')
         ;
     }

@@ -1,6 +1,4 @@
-ajout_article:
-    path:     /ajout_article
-    defaults: { _controller: BoutiqueBundle:Boutique:ajout_article }
+
 
 ajout_categorie:
     path:     /ajout_categorie
@@ -20,5 +18,5 @@ edition_article:
 
 ajout_article:
     path:     /ajout_article
-    defaults: { _controller: BoutiqueBundle:Boutique:add }
+    defaults: { _controller: BoutiqueBundle:Article:addArticle }
 
