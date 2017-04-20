@@ -26,7 +26,7 @@ class MediaData extends AbstractFixture implements OrderedFixtureInterface
         $media3 = new Media();
         $media3->setNomMedia("Image Carnet");
         $media3->setTypeMedia("Image");
-        $media3->setUrlMedia("img_boutique/carnet_exia.png");
+        $media3->setUrlMedia("img_boutique/carnet_exia.jpg");
         $manager->persist($media3);
 
         $manager->flush();
@@ -40,6 +40,6 @@ class MediaData extends AbstractFixture implements OrderedFixtureInterface
 
     public function getOrder()
     {
-        return 4;
+        return 3;
     }
 }

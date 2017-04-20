@@ -16,7 +16,7 @@ class ArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article1->setDescriptionArt("Sweat vendu par le cesi exia.");
         $article1->setPrixArt(20);
         $article1->setStockArt(100);
-        //$article1->setMedia($this->getReference('media1'));
+        $article1->setMedia($this->getReference('media1'));
         //$article1->setCategorie($this->getReference('categorie1'));
         $manager->persist($article1);
 
@@ -25,7 +25,7 @@ class ArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article2->setDescriptionArt("Carnet vendu par le cesi exia.");
         $article2->setPrixArt(9.99);
         $article2->setStockArt(40);
-        //$article2->setMedia($this->getReference('media3'));
+        $article2->setMedia($this->getReference('media3'));
         //$article2->setCategorie($this->getReference('categorie2'));
         $manager->persist($article2);
 
@@ -34,7 +34,7 @@ class ArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article3->setDescriptionArt("Sweat vendu par le cesi exia.");
         $article3->setPrixArt(15);
         $article3->setStockArt(100);
-        //$article3->setMedia($this->getReference('media2'));
+        $article3->setMedia($this->getReference('media2'));
         //$article3->setCategorie($this->getReference('categorie1'));
         $manager->persist($article3);
 
@@ -49,6 +49,6 @@ class ArticleData extends AbstractFixture implements OrderedFixtureInterface
 
     public function getOrder()
     {
-        return 3;
+        return 4;
     }
 }
