@@ -29,6 +29,11 @@ class Categorie
     private $nomCat;
 
 
+
+    public function __toString() {
+        return $this->nomCat;
+    }
+
     /**
      * Get id
      *

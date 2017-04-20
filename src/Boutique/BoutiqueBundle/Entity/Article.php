@@ -62,7 +62,7 @@ class Article
      */
     public $media;
 
-    
+
 
 
 

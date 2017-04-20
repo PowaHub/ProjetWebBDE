@@ -12,30 +12,30 @@ class ArticleData extends AbstractFixture implements OrderedFixtureInterface
     public function load(ObjectManager $manager)
     {
         $article1 = new Article();
-        $article1->setNomArt("Sweat Exia");
-        $article1->setDescriptionArt("Sweat vendu par le cesi exia.");
-        $article1->setPrixArt(20);
-        $article1->setStockArt(100);
+        $article1->setNomArticle("Sweat Exia");
+        $article1->setDescriptionArticle("Sweat vendu par le cesi exia.");
+        $article1->setPrixArticle(20);
+        $article1->setStockArticle(100);
         $article1->setMedia($this->getReference('media1'));
-        //$article1->setCategorie($this->getReference('categorie1'));
+        $article1->setCategorieArticle($this->getReference('categorie1'));
         $manager->persist($article1);
 
         $article2 = new Article();
-        $article2->setNomArt("Carnet Exia");
-        $article2->setDescriptionArt("Carnet vendu par le cesi exia.");
-        $article2->setPrixArt(9.99);
-        $article2->setStockArt(40);
+        $article2->setNomArticle("Carnet Exia");
+        $article2->setDescriptionArticle("Carnet vendu par le cesi exia.");
+        $article2->setPrixArticle(9.99);
+        $article2->setStockArticle(40);
         $article2->setMedia($this->getReference('media3'));
-        //$article2->setCategorie($this->getReference('categorie2'));
+        $article2->setCategorieArticle($this->getReference('categorie2'));
         $manager->persist($article2);
 
         $article3 = new Article();
-        $article3->setNomArt("Sweat sans Capuche Exia");
-        $article3->setDescriptionArt("Sweat vendu par le cesi exia.");
-        $article3->setPrixArt(15);
-        $article3->setStockArt(100);
+        $article3->setNomArticle("Sweat sans Capuche Exia");
+        $article3->setDescriptionArticle("Sweat vendu par le cesi exia.");
+        $article3->setPrixArticle(15);
+        $article3->setStockArticle(100);
         $article3->setMedia($this->getReference('media2'));
-        //$article3->setCategorie($this->getReference('categorie1'));
+        $article3->setCategorieArticle($this->getReference('categorie1'));
         $manager->persist($article3);
 
         $manager->flush();
