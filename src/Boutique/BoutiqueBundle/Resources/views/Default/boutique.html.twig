@@ -8,12 +8,18 @@
             <div class="col-xs-12 col-sm-3 col-md-2 well">
 
 					<div class="col-xs-6 col-md-12 col-lg-6"><strong>Catégories : </strong></div>
+					{% if is_granted('ROLE_CESI') %}
 					<div class="col-xs-6 col-md-12 col-lg-6"><a href="{{ path('ajout_categorie') }}" class="btn btn-danger active">Ajouter</a></div>
+					{%endif %}
                 {% for categorie in categories |slice(0,2) %}
 					<div class="col-xs-6 col-md-12 col-lg-6"><a href="">{{ categorie.nomCat }}</a></div>
+					{% if is_granted('ROLE_CESI') %}
 					<div class="col-xs-6 col-md-12 col-lg-6"><a href="" class="btn btn-danger active suppr">Supprimer</a></div>
+					{%endif %}
                 {% endfor %}
+                	{% if is_granted('ROLE_CESI') %}
 					<div class="col-xs-12"><a href="{{ path('ajout_article') }}" class="btn btn-danger active">Ajouter un article</a></div>
+					{%endif %}
 
             </div>
 
@@ -51,8 +57,12 @@
 						<!-- barre de boutons pour la gestion -->
 						<div class="btn-group-justified btn-group-sm">
 							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
+							{% if is_granted('ROLE_CESI') %}
 							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
+							{%endif %}
+							{% if is_granted('ROLE_CESI') %}
 							<a class="btn btn-danger active produit suppr" role="button" href="">Supprimer</a>
+							{%endif %}
 						</div>
 					</div>
 				</div>
