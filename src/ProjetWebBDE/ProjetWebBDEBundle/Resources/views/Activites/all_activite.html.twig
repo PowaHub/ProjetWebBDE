@@ -29,7 +29,9 @@
                                     <p align="center"><img src="{{ asset('img/logo.jpg') }}"></p>
                                 </div>
                                 <div id="vote" class="col-md-1 col-lg-1">
+                                {% if is_granted("IS_AUTHENTICATED_FULLY") %}
                                     <button type="submit" class="btn btn-default btn-md" id="popupinscription">S'inscrire</button>
+                                {%endif%}
                                 </div>
                             </div>
                         </form>

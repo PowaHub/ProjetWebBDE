@@ -33,14 +33,17 @@
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-12">
+                        {% if is_granted("IS_AUTHENTICATED_FULLY") %}
                             <div class="form-inline">
                                 <label for="charger_image">Charger une photo</label>
                                 <input role="button" type="file" class="form-control-file btn btn-danger active" id="charger_image"><br>
                             </div>
+                        {%endif%}
                         </div>
                     </div>
 
                     <div class="col-lg-12">
+                    {% if is_granted("IS_AUTHENTICATED_FULLY") %}
                         <div class="row">
                             <div class="col-md-2 col-lg-2"><p align="center"><img src="{{ asset('img/logo.jpg') }}"></p>
                                 <button>Like</button>
@@ -81,6 +84,7 @@
                                 <button>Like</button>
                                 <button>Comment</button></div>
                         </div>
+                    {%endif%}
                     </div>
 
                     <div class="row">

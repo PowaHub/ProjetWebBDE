@@ -3,6 +3,8 @@
 namespace ProjetWebBDE\ProjetWebBDEBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use ProjetWebBDE\ProjetWebBDEBundle\Form\EnquiryType;
+use ProjetWebBDE\ProjetWebBDEBundle\Entity\Enquiry;
 
 class IndexController extends Controller
 {

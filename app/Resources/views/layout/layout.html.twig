@@ -33,20 +33,31 @@
                                         <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Activités <span class="caret"></span></a>
                                         <ul class="dropdown-menu">
                                             <li><a href="{{ path('all_activite') }}">Toutes les activités</a></li>
+                                            {% if is_granted("IS_AUTHENTICATED_FULLY") %}
                                             <li><a href="{{ path('proposer_activite') }}">Proposer une activité</a></li>
                                             <li><a href="{{ path('vote_activite') }}">Voter pour une activité</a></li>
                                             <li><a href="{{ path('creation_activite') }}">Créer une activité</a></li>
+                                            {%endif%}
                                         </ul>
                                     </li>
+                                    {% if is_granted("IS_AUTHENTICATED_FULLY") %}
                                     <li class="linav"> <a href="{{ path('photo') }}">Photos</a> </li>
+                                    {%endif%}
                                     <li class="linav"> <a href="{{ path('association') }}">Associations</a> </li>
                                     <li class="linav"> <a href="{{ path('contact') }}">Contact</a> </li>
 
                                 </ul>
+                                {% if is_granted("IS_AUTHENTICATED_FULLY") %}
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="linav"> <a href="{{ path('fos_user_security_logout') }}"><span class="glyphicon glyphicon-user"></span> Se déconnecter</a> </li>
+                                </ul>
+                                {%else%}
                                 <ul class="nav navbar-nav navbar-right">
                                     <li class="linav"> <a href="{{ path('fos_user_security_login') }}"><span class="glyphicon glyphicon-user"></span> Se connecter</a> </li>
                                     <li class="linav"> <a href="{{ path('fos_user_registration_register') }}"><span class="glyphicon glyphicon-log-in"></span> S'inscrire</a> </li>
                                 </ul>
+
+                                {%endif%}
                             </div>
                         </div>
                     </nav>
@@ -60,14 +71,16 @@
                 </div>
 
                 <div class="col-xs-offset-4 col-sm-offset-4 col-md-offset-8 col-lg-offset-8 col-xs-2 col-sm-2 col-md-1 col-lg-1">
-                    <p class="bonjour">
-
-                    </p>
+                    <div class="bonjour">
+                        {% if is_granted("IS_AUTHENTICATED_FULLY") %}
+                                <p>  Bonjour <b>{{ app.user.username }}</b></p>
+                        {%endif%}
+                    </div>
                 </div>
 
                 <!-- AVATAR-->
                 <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1">
-                    <a href="#">
+                    <a href="{{ path('fos_user_profile_edit') }}">
                         <img src="{{ asset('img/deco.png')}}" alt="Logo" class="img-rounded avatar">
                     </a>
                 </div>
