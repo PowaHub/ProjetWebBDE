@@ -31,23 +31,9 @@ class activite
     /**
      * @var string
      *
-     * @ORM\Column(name="description_Activite", type="string", length=255)
-     */
-    private $descriptionActivite;
-
-    /**
-     * @var string
-     *
      * @ORM\Column(name="lieu_Activite", type="string", length=255)
      */
     private $lieuActivite;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="date_Activite", type="datetime")
-     */
-    private $dateActivite;
 
     /**
      * @var float
@@ -57,18 +43,34 @@ class activite
     private $prixActivite;
 
     /**
-     * @var bool
+     * @var \Date
      *
-     * @ORM\Column(name="recurrence_Activite", type="boolean")
+     * @ORM\Column(name="date_Activite", type="date")
      */
-    private $recurrenceActivite;
+    private $dateActivite;
+
+    /**
+     * @var \Time
+     *
+     * @ORM\Column(name="time_Activite", type="time")
+     */
+    private $heureActivite;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="recurrence_commentaire", type="string", length=255)
+     * @ORM\Column(name="description_Activite", type="string", length=255)
      */
-    private $recurrenceCommentaire;
+    private $descriptionActivite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="recurrence_activite", type="string", length=255)
+     */
+    private $recurrenceActivite;
+
+
 
 
 
@@ -107,30 +109,6 @@ class activite
     }
 
     /**
-     * Set descriptionActivite
-     *
-     * @param string $descriptionActivite
-     *
-     * @return activite
-     */
-    public function setDescriptionActivite($descriptionActivite)
-    {
-        $this->descriptionActivite = $descriptionActivite;
-
-        return $this;
-    }
-
-    /**
-     * Get descriptionActivite
-     *
-     * @return string
-     */
-    public function getDescriptionActivite()
-    {
-        return $this->descriptionActivite;
-    }
-
-    /**
      * Set lieuActivite
      *
      * @param string $lieuActivite
@@ -152,30 +130,6 @@ class activite
     public function getLieuActivite()
     {
         return $this->lieuActivite;
-    }
-
-    /**
-     * Set dateActivite
-     *
-     * @param \DateTime $dateActivite
-     *
-     * @return activite
-     */
-    public function setDateActivite($dateActivite)
-    {
-        $this->dateActivite = $dateActivite;
-
-        return $this;
-    }
-
-    /**
-     * Get dateActivite
-     *
-     * @return \DateTime
-     */
-    public function getDateActivite()
-    {
-        return $this->dateActivite;
     }
 
     /**
@@ -203,9 +157,81 @@ class activite
     }
 
     /**
+     * Set dateActivite
+     *
+     * @param \DateTime $dateActivite
+     *
+     * @return activite
+     */
+    public function setDateActivite($dateActivite)
+    {
+        $this->dateActivite = $dateActivite;
+
+        return $this;
+    }
+
+    /**
+     * Get dateActivite
+     *
+     * @return \DateTime
+     */
+    public function getDateActivite()
+    {
+        return $this->dateActivite;
+    }
+
+    /**
+     * Set heureActivite
+     *
+     * @param \DateTime $heureActivite
+     *
+     * @return activite
+     */
+    public function setHeureActivite($heureActivite)
+    {
+        $this->heureActivite = $heureActivite;
+
+        return $this;
+    }
+
+    /**
+     * Get heureActivite
+     *
+     * @return \DateTime
+     */
+    public function getHeureActivite()
+    {
+        return $this->heureActivite;
+    }
+
+    /**
+     * Set descriptionActivite
+     *
+     * @param string $descriptionActivite
+     *
+     * @return activite
+     */
+    public function setDescriptionActivite($descriptionActivite)
+    {
+        $this->descriptionActivite = $descriptionActivite;
+
+        return $this;
+    }
+
+    /**
+     * Get descriptionActivite
+     *
+     * @return string
+     */
+    public function getDescriptionActivite()
+    {
+        return $this->descriptionActivite;
+    }
+
+    /**
      * Set recurrenceActivite
      *
-     * @param boolean $recurrenceActivite
+     * @param string $recurrenceActivite
      *
      * @return activite
      */
@@ -219,34 +245,10 @@ class activite
     /**
      * Get recurrenceActivite
      *
-     * @return boolean
+     * @return string
      */
     public function getRecurrenceActivite()
     {
         return $this->recurrenceActivite;
-    }
-
-    /**
-     * Set recurrenceCommentaire
-     *
-     * @param string $recurrenceCommentaire
-     *
-     * @return activite
-     */
-    public function setRecurrenceCommentaire($recurrenceCommentaire)
-    {
-        $this->recurrenceCommentaire = $recurrenceCommentaire;
-
-        return $this;
-    }
-
-    /**
-     * Get recurrenceCommentaire
-     *
-     * @return string
-     */
-    public function getRecurrenceCommentaire()
-    {
-        return $this->recurrenceCommentaire;
     }
 }

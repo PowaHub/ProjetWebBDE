@@ -31,23 +31,9 @@ class activite
     /**
      * @var string
      *
-     * @ORM\Column(name="description_Activite", type="string", length=255)
-     */
-    private $descriptionActivite;
-
-    /**
-     * @var string
-     *
      * @ORM\Column(name="lieu_Activite", type="string", length=255)
      */
     private $lieuActivite;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="date_Activite", type="datetime")
-     */
-    private $dateActivite;
 
     /**
      * @var float
@@ -57,18 +43,34 @@ class activite
     private $prixActivite;
 
     /**
-     * @var bool
+     * @var \Date
      *
-     * @ORM\Column(name="recurrence_Activite", type="boolean")
+     * @ORM\Column(name="date_Activite", type="date")
      */
-    private $recurrenceActivite;
+    private $dateActivite;
+
+    /**
+     * @var \Time
+     *
+     * @ORM\Column(name="time_Activite", type="time")
+     */
+    private $heureActivite;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="recurrence_commentaire", type="string", length=255)
+     * @ORM\Column(name="description_Activite", type="string", length=255)
      */
-    private $recurrenceCommentaire;
+    private $descriptionActivite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="recurrence_activite", type="string", length=255)
+     */
+    private $recurrenceActivite;
+
+
 
 
 }
