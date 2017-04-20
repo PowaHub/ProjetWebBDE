@@ -46,9 +46,9 @@ proposer_activite:
   path:  /proposer_activite
   defaults: { _controller: ProjetWebBDEBundle:Index:proposer_activite }
 
-valitation_activite:
-  path:  /valitation_activite
-  defaults: { _controller: ProjetWebBDEBundle:Index:valitation_activite }
+validation_activite:
+  path:  /validation_activite
+  defaults: { _controller: ProjetWebBDEBundle:Index:validation_activite }
 
 vote_activite:
   path:  /vote_activite

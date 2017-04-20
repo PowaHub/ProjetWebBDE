@@ -77,5 +77,4 @@ class IndexController extends Controller
         return $this->render('ProjetWebBDEBundle:Activites:vote_activite.html.twig');
     }
 
-
 }
