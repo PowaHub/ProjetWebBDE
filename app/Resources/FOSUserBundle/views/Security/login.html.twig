@@ -17,7 +17,7 @@
                         Inscrivez vous !
                     </em>
                     <br /><br />
-                    <a href="{{ path('fos_user_registration_register') }}" class="btn btn-primary">S'inscrire</a>
+                    <a href="{{ path('fos_user_registration_register') }}" class="btn btn-danger active">S'inscrire</a>
 
                 </div>
 
@@ -33,7 +33,7 @@
                     <input type="password" id="password" name="_password" required="required" />
                     <br />
 
-                    <input class="btn btn-primary" type="submit" value="{{ 'security.login.submit'|trans }}" />
+                    <input class="btn btn-danger active" type="submit" value="{{ 'security.login.submit'|trans }}" />
                     </form>
                     <a href="{{ path('fos_user_resetting_request') }}">Mot de passe perdu ?</a>
                 </div>
