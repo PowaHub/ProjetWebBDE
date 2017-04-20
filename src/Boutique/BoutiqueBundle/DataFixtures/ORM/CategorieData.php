@@ -12,11 +12,11 @@ class CategorieData extends AbstractFixture implements OrderedFixtureInterface
     public function load(ObjectManager $manager)
     {
         $categorie1 = new Categorie();
-        $categorie1->setNomCat("Categorie 1");
+        $categorie1->setNomCat("Vêtements");
         $manager->persist($categorie1);
 
         $categorie2 = new Categorie();
-        $categorie2->setNomCat("Categorie 2");
+        $categorie2->setNomCat("Accessoires");
         $manager->persist($categorie2);
 
         $manager->flush();

@@ -28,7 +28,8 @@ class BoutiqueController extends Controller
 
         $em = $this->getDoctrine()->getManager();
         $articles = $em->getRepository('BoutiqueBundle:Article')->findAll();
-        return $this->render('BoutiqueBundle:Default:boutique.html.twig',array("articles"=> $articles));
+        $categories = $em->getRepository('BoutiqueBundle:Categorie')->findAll();
+        return $this->render('BoutiqueBundle:Default:boutique.html.twig',array("articles"=> $articles, "categories"=> $categories));
     }
 
     public function edition_articleAction()
