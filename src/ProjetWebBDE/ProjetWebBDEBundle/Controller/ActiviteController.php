@@ -3,7 +3,7 @@
 namespace ProjetWebBDE\ProjetWebBDEBundle\Controller;
 
 use ProjetWebBDE\ProjetWebBDEBundle\Entity\activite;
-use ProjetWebBDE\ProjetWebBDEBundle\Form\activiteType;
+use ProjetWebBDE\ProjetWebBDEBundle\Form\ActiviteType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

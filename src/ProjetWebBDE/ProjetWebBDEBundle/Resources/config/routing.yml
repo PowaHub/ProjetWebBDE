@@ -38,7 +38,7 @@ ancienne_activite:
 
 creation_activite:
   path:  /creation_activite
-  defaults: { _controller: ProjetWebBDEBundle:Index:creation_activite }
+  defaults: { _controller: ProjetWebBDEBundle:Activite:addActivite }
 
 nouvelle_activite:
   path:  /nouvelle_activite
@@ -55,4 +55,3 @@ validation_activite:
 vote_activite:
   path:  /vote_activite
   defaults: { _controller: ProjetWebBDEBundle:Index:vote_activite }
-
