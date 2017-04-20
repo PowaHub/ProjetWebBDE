@@ -51,7 +51,7 @@ class Article
 
     /**
      * @ORM\OneToOne(targetEntity="Boutique\BoutiqueBundle\Entity\Media", cascade={"persist","remove"})
-     * @ORM\JoinColumn(nullable=true)
+     * @ORM\JoinColumn(nullable=false)
      */
     public $media;
     
