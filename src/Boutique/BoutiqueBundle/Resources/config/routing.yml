@@ -17,3 +17,8 @@ boutique:
 edition_article:
     path:     /edition_article
     defaults: { _controller: BoutiqueBundle:Boutique:edition_article }
+
+ajout_article:
+    path:     /ajout_article
+    defaults: { _controller: BoutiqueBundle:Boutique:add }
+

@@ -2,41 +2,51 @@
 {% block title %}Activités à venir - BDE Exia{% endblock %}
 
 {% block body %}
-
     <div class="row">
-        <div class="col-lg-offset-2 col-md-8 col-lg-8">
+        <div class="col-xs-12 col-md-2"></div>
+
+        <div class="col-xs-12 col-md-8">
             <h2 class="h2">Les activités à venir : </h2>
             <hr>
 
-            <div class="row">
-                <div class="col-md-2 col-lg-2">
+            <div class="col-xs-12">
+                <div class="col-xs-6 col-sm-2">
                     <p> <a href="{{ path('nouvelle_activite') }}" class="newactivity">Les activités à venir</a></p>
                 </div>
-                <div class="col-md-2 col-lg-2">
+                <div class="col-xs-6 col-sm-2">
                     <p> <a href="{{ path('ancienne_activite') }}" class="oldactivity">Les activités passées</a></p>
                 </div>
             </div>
-            <div id="activity" class="col-md-8 col-lg-8">
-                <form class="cssform" action="">
-                    <div class="row">
-                        <p>Nom de l'activité</p>
-                        <p><label for="comments">Description :</label>
+
+            <div>
+                <div class="col-xs-12">
+                    <div id="activity1" class="col-xs-12">
+                        <form class="cssform" action="">
+                            <div class="col-xs-12">
+                                <a target="_blank" href="{{ path('activite') }}">Nom de l'activité</a>
+                                <button type="submit" class="btn btn-default btn-md" id="popupinscription">S'inscrire</button>
+                                <p><label for="comments1">Description :</label></p>
+                            </div>
+
+                            <div class="col-xs-12">
+                                <div class="col-xs-12 col-md-9">
+                                    <textarea class="form-control" id="comments1" rows="5" cols="25"></textarea>
+                                </div>
+                                <div class="col-md-3">
+                                    <p align="center"><img src="{{ asset('img/logo.jpg') }}"></p>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="row">
-                        <div class="col-md-8 col-lg-8">
-                            <textarea class="form-control" id="comments" rows="5" cols="25"></textarea></p>
-                        </div>
-                        <div class="col-md-3 col-lg-3">
-                            <p align="center"><img src="{{ asset('img/logo.jpg') }}"></p>
-                        </div>
-                        {% if is_granted("IS_AUTHENTICATED_FULLY") %}
-                        <div id="vote" class="col-md-1 col-lg-1">
-                            <button type="submit" class="btn btn-default">S'inscrire</button>
-                        </div>
-                        {%endif%}
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
+
+        <div class="col col-xs-12 col-md-2"></div>
+    </div>
+
+    <div id="popupinformation" title="Inscription">
+        <p>Avez vous une remarque à nous soumettre ?</p>
+        <textarea class="form-control" title="Inscription" id="textarea" rows="5" cols="25"></textarea>
     </div>
 {% endblock %}

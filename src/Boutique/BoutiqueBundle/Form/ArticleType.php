@@ -3,6 +3,9 @@
 namespace Boutique\BoutiqueBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\Extension\Core\Type\MoneyType;
+use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -13,10 +16,10 @@ class ArticleType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('nomArt')
-            ->add('descriptionArt')
-            ->add('prixArt')
-            ->add('stockArt')
+        $builder->add('nomArt', TextType::class)
+            ->add('descriptionArt', TextType::class)
+            ->add('prixArt', MoneyType::class, array('scale'=>2, 'currency'=> 'EUR'))
+            ->add('stockArt' NumberType::class)
             ->add('media')
         ;
     }
