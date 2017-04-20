@@ -128,13 +128,12 @@
 
                 {% for article in articles |slice(0,3) %}
                     <div class="col-xs-12 col-sm-4 thumbnail">
-                        {{ article.nomArt }}
+                        {{ article.nomArticle }}
                         <img src="{{ asset(article.media.urlMedia) }}" alt="Article1" class="img-responsive">
                         <div class="form-group">
                             <a type="button" class="btn btn-default btn-md" href="{{ path('article') }}">Détails ...</a>
                         </div>
                     </div>
-
                 {% endfor %}
 
             </div>
