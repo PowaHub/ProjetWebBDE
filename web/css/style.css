@@ -336,6 +336,13 @@ footer a{
 
 }
 
+.foot
+{
+	bottom: 0;
+	margin-bottom: 0;
+	height: 1.5em;
+}
+
 
 /*pierre*/
 
