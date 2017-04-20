@@ -24,30 +24,37 @@ class Article
     /**
      * @var string
      *
-     * @ORM\Column(name="nom_art", type="text")
+     * @ORM\Column(name="nom_Article", type="text")
      */
-    private $nomArt;
+    private $nomArticle;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="description_art", type="string", length=255)
+     * @ORM\Column(name="description_Article", type="string", length=255)
      */
-    private $descriptionArt;
+    private $descriptionArticle;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="categorie_Article", type="string", length=255)
+     */
+    private $categorieArticle;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="prix_art", type="float")
+     * @ORM\Column(name="prix_Article", type="float")
      */
-    private $prixArt;
+    private $prixArticle;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="stock_art", type="smallint")
+     * @ORM\Column(name="stock_Article", type="smallint")
      */
-    private $stockArt;
+    private $stockArticle;
 
     /**
      * @ORM\OneToOne(targetEntity="Boutique\BoutiqueBundle\Entity\Media", cascade={"persist","remove"})
@@ -55,18 +62,14 @@ class Article
      */
     public $media;
 
-    /**
-     * @ORM\OneToOne(targetEntity="Boutique\BoutiqueBundle\Entity\Categorie", cascade={"persist","remove"})
-     * @ORM\JoinColumn(nullable=true)
-     */
-    public $categorie;
     
+
 
 
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -74,99 +77,123 @@ class Article
     }
 
     /**
-     * Set nomArt
+     * Set nomArticle
      *
-     * @param string $nomArt
+     * @param string $nomArticle
      *
      * @return Article
      */
-    public function setNomArt($nomArt)
+    public function setNomArticle($nomArticle)
     {
-        $this->nomArt = $nomArt;
+        $this->nomArticle = $nomArticle;
 
         return $this;
     }
 
     /**
-     * Get nomArt
+     * Get nomArticle
      *
      * @return string
      */
-    public function getNomArt()
+    public function getNomArticle()
     {
-        return $this->nomArt;
+        return $this->nomArticle;
     }
 
     /**
-     * Set descriptionArt
+     * Set descriptionArticle
      *
-     * @param string $descriptionArt
+     * @param string $descriptionArticle
      *
      * @return Article
      */
-    public function setDescriptionArt($descriptionArt)
+    public function setDescriptionArticle($descriptionArticle)
     {
-        $this->descriptionArt = $descriptionArt;
+        $this->descriptionArticle = $descriptionArticle;
 
         return $this;
     }
 
     /**
-     * Get descriptionArt
+     * Get descriptionArticle
      *
      * @return string
      */
-    public function getDescriptionArt()
+    public function getDescriptionArticle()
     {
-        return $this->descriptionArt;
+        return $this->descriptionArticle;
     }
 
     /**
-     * Set prixArt
+     * Set categorieArticle
      *
-     * @param float $prixArt
+     * @param string $categorieArticle
      *
      * @return Article
      */
-    public function setPrixArt($prixArt)
+    public function setCategorieArticle($categorieArticle)
     {
-        $this->prixArt = $prixArt;
+        $this->categorieArticle = $categorieArticle;
 
         return $this;
     }
 
     /**
-     * Get prixArt
+     * Get categorieArticle
+     *
+     * @return string
+     */
+    public function getCategorieArticle()
+    {
+        return $this->categorieArticle;
+    }
+
+    /**
+     * Set prixArticle
+     *
+     * @param float $prixArticle
+     *
+     * @return Article
+     */
+    public function setPrixArticle($prixArticle)
+    {
+        $this->prixArticle = $prixArticle;
+
+        return $this;
+    }
+
+    /**
+     * Get prixArticle
      *
      * @return float
      */
-    public function getPrixArt()
+    public function getPrixArticle()
     {
-        return $this->prixArt;
+        return $this->prixArticle;
     }
 
     /**
-     * Set stockArt
+     * Set stockArticle
      *
-     * @param integer $stockArt
+     * @param integer $stockArticle
      *
      * @return Article
      */
-    public function setStockArt($stockArt)
+    public function setStockArticle($stockArticle)
     {
-        $this->stockArt = $stockArt;
+        $this->stockArticle = $stockArticle;
 
         return $this;
     }
 
     /**
-     * Get stockArt
+     * Get stockArticle
      *
-     * @return int
+     * @return integer
      */
-    public function getStockArt()
+    public function getStockArticle()
     {
-        return $this->stockArt;
+        return $this->stockArticle;
     }
 
     /**

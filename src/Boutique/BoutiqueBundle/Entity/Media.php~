@@ -24,29 +24,34 @@ class Media
     /**
      * @var string
      *
-     * @ORM\Column(name="nom_media", type="text")
+     * @ORM\Column(name="nom_media", type="string", length=255)
      */
     private $nomMedia;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="type_media", type="text")
+     * @ORM\Column(name="type_media", type="string", length=255)
      */
     private $typeMedia;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="url_media", type="text")
+     * @ORM\Column(name="url_media", type="string", length=255)
      */
     private $urlMedia;
 
 
+
+    public function __toString() {
+          return $this->nomMedia;
+    }
+    
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {

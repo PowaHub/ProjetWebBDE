@@ -1,0 +1,74 @@
+<?php
+
+namespace ProjetWebBDE\ProjetWebBDEBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * activite
+ *
+ * @ORM\Table(name="activite")
+ * @ORM\Entity(repositoryClass="ProjetWebBDE\ProjetWebBDEBundle\Repository\activiteRepository")
+ */
+class activite
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom_Activite", type="string", length=255)
+     */
+    private $nomActivite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="description_Activite", type="string", length=255)
+     */
+    private $descriptionActivite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="lieu_Activite", type="string", length=255)
+     */
+    private $lieuActivite;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_Activite", type="datetime")
+     */
+    private $dateActivite;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="prix_Activite", type="float")
+     */
+    private $prixActivite;
+
+    /**
+     * @var bool
+     *
+     * @ORM\Column(name="recurrence_Activite", type="boolean")
+     */
+    private $recurrenceActivite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="recurrence_commentaire", type="string", length=255)
+     */
+    private $recurrenceCommentaire;
+
+
+}

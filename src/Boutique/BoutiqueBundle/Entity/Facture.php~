@@ -94,4 +94,3 @@ class Facture
         return $this->dateFacture;
     }
 }
-

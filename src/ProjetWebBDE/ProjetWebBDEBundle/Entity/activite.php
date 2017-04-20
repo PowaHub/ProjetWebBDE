@@ -24,57 +24,58 @@ class activite
     /**
      * @var string
      *
-     * @ORM\Column(name="nom_act", type="string", length=255)
+     * @ORM\Column(name="nom_Activite", type="string", length=255)
      */
-    private $nomAct;
+    private $nomActivite;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="description_act", type="string", length=255)
+     * @ORM\Column(name="description_Activite", type="string", length=255)
      */
-    private $descriptionAct;
+    private $descriptionActivite;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="lieu_act", type="string", length=255)
+     * @ORM\Column(name="lieu_Activite", type="string", length=255)
      */
-    private $lieuAct;
+    private $lieuActivite;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_act", type="datetime")
+     * @ORM\Column(name="date_Activite", type="datetime")
      */
-    private $dateAct;
+    private $dateActivite;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="prix_act", type="float")
+     * @ORM\Column(name="prix_Activite", type="float")
      */
-    private $prixAct;
+    private $prixActivite;
 
     /**
      * @var bool
      *
-     * @ORM\Column(name="recurrence_act", type="boolean")
+     * @ORM\Column(name="recurrence_Activite", type="boolean")
      */
-    private $recurrenceAct;
+    private $recurrenceActivite;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="recurrence_comm", type="string", length=255)
+     * @ORM\Column(name="recurrence_commentaire", type="string", length=255)
      */
-    private $recurrenceComm;
+    private $recurrenceCommentaire;
+
 
 
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -82,171 +83,170 @@ class activite
     }
 
     /**
-     * Set nomAct
+     * Set nomActivite
      *
-     * @param string $nomAct
+     * @param string $nomActivite
      *
      * @return activite
      */
-    public function setNomAct($nomAct)
+    public function setNomActivite($nomActivite)
     {
-        $this->nomAct = $nomAct;
+        $this->nomActivite = $nomActivite;
 
         return $this;
     }
 
     /**
-     * Get nomAct
+     * Get nomActivite
      *
      * @return string
      */
-    public function getNomAct()
+    public function getNomActivite()
     {
-        return $this->nomAct;
+        return $this->nomActivite;
     }
 
     /**
-     * Set descriptionAct
+     * Set descriptionActivite
      *
-     * @param string $descriptionAct
+     * @param string $descriptionActivite
      *
      * @return activite
      */
-    public function setDescriptionAct($descriptionAct)
+    public function setDescriptionActivite($descriptionActivite)
     {
-        $this->descriptionAct = $descriptionAct;
+        $this->descriptionActivite = $descriptionActivite;
 
         return $this;
     }
 
     /**
-     * Get descriptionAct
+     * Get descriptionActivite
      *
      * @return string
      */
-    public function getDescriptionAct()
+    public function getDescriptionActivite()
     {
-        return $this->descriptionAct;
+        return $this->descriptionActivite;
     }
 
     /**
-     * Set lieuAct
+     * Set lieuActivite
      *
-     * @param string $lieuAct
+     * @param string $lieuActivite
      *
      * @return activite
      */
-    public function setLieuAct($lieuAct)
+    public function setLieuActivite($lieuActivite)
     {
-        $this->lieuAct = $lieuAct;
+        $this->lieuActivite = $lieuActivite;
 
         return $this;
     }
 
     /**
-     * Get lieuAct
+     * Get lieuActivite
      *
      * @return string
      */
-    public function getLieuAct()
+    public function getLieuActivite()
     {
-        return $this->lieuAct;
+        return $this->lieuActivite;
     }
 
     /**
-     * Set dateAct
+     * Set dateActivite
      *
-     * @param \DateTime $dateAct
+     * @param \DateTime $dateActivite
      *
      * @return activite
      */
-    public function setDateAct($dateAct)
+    public function setDateActivite($dateActivite)
     {
-        $this->dateAct = $dateAct;
+        $this->dateActivite = $dateActivite;
 
         return $this;
     }
 
     /**
-     * Get dateAct
+     * Get dateActivite
      *
      * @return \DateTime
      */
-    public function getDateAct()
+    public function getDateActivite()
     {
-        return $this->dateAct;
+        return $this->dateActivite;
     }
 
     /**
-     * Set prixAct
+     * Set prixActivite
      *
-     * @param float $prixAct
+     * @param float $prixActivite
      *
      * @return activite
      */
-    public function setPrixAct($prixAct)
+    public function setPrixActivite($prixActivite)
     {
-        $this->prixAct = $prixAct;
+        $this->prixActivite = $prixActivite;
 
         return $this;
     }
 
     /**
-     * Get prixAct
+     * Get prixActivite
      *
      * @return float
      */
-    public function getPrixAct()
+    public function getPrixActivite()
     {
-        return $this->prixAct;
+        return $this->prixActivite;
     }
 
     /**
-     * Set recurrenceAct
+     * Set recurrenceActivite
      *
-     * @param boolean $recurrenceAct
+     * @param boolean $recurrenceActivite
      *
      * @return activite
      */
-    public function setRecurrenceAct($recurrenceAct)
+    public function setRecurrenceActivite($recurrenceActivite)
     {
-        $this->recurrenceAct = $recurrenceAct;
+        $this->recurrenceActivite = $recurrenceActivite;
 
         return $this;
     }
 
     /**
-     * Get recurrenceAct
+     * Get recurrenceActivite
      *
-     * @return bool
+     * @return boolean
      */
-    public function getRecurrenceAct()
+    public function getRecurrenceActivite()
     {
-        return $this->recurrenceAct;
+        return $this->recurrenceActivite;
     }
 
     /**
-     * Set recurrenceComm
+     * Set recurrenceCommentaire
      *
-     * @param string $recurrenceComm
+     * @param string $recurrenceCommentaire
      *
      * @return activite
      */
-    public function setRecurrenceComm($recurrenceComm)
+    public function setRecurrenceCommentaire($recurrenceCommentaire)
     {
-        $this->recurrenceComm = $recurrenceComm;
+        $this->recurrenceCommentaire = $recurrenceCommentaire;
 
         return $this;
     }
 
     /**
-     * Get recurrenceComm
+     * Get recurrenceCommentaire
      *
      * @return string
      */
-    public function getRecurrenceComm()
+    public function getRecurrenceCommentaire()
     {
-        return $this->recurrenceComm;
+        return $this->recurrenceCommentaire;
     }
 }
-

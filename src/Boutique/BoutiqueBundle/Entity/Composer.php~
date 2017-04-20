@@ -125,4 +125,3 @@ class Composer
         return $this->heureAchat;
     }
 }
-

@@ -5,6 +5,23 @@
 
                 {{ form_start(form) }}
                 {{ form_widget(form) }}
+
+                <div class="col-xs-12 form-group produit">
+                    <button type="submit" class="btn btn-danger active">Envoyer</button>
+                </div>
+
+                {% for flash_message in app.session.flashBag.get('success') %}
+                    <div class="alert alert-success">
+                        {{ flash_message }}
+                    </div>
+                {% endfor %}
+
+                {% for flash_message in app.session.flashBag.get('error') %}
+                    <div class="alert alert-danger">
+                        {{ flash_message }}
+                    </div>
+                {% endfor %}
+
                 {{ form_end(form) }}
 
 
