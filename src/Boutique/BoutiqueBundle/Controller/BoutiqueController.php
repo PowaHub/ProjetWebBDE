@@ -10,7 +10,9 @@ class BoutiqueController extends Controller
 
     public function ajout_articleAction()
     {
-        return $this->render('BoutiqueBundle:Default:ajout_article.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $categories = $em->getRepository('BoutiqueBundle:Categorie')->findAll();
+        return $this->render('BoutiqueBundle:Default:ajout_article.html.twig', array("categories"=>$categories));
     }
 
     public function ajout_categorieAction()

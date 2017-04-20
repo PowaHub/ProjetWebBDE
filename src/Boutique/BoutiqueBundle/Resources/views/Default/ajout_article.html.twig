@@ -21,7 +21,7 @@
                             <label for="id_art">ID de l'article</label>
                         </div>
                         <div class="form-inline">
-                            <input type="text" class="form-control" id="nom_art>
+                            <input type="text" class="form-control" id="nom_art">
                             <label for="nom_art">Nom de l'article</label>
                         </div>
                         <div class="form-inline">
@@ -30,9 +30,9 @@
                         </div>
                         <div class="form-inline">
                             <select class="form-control" id="categorie_art">
-                                <option>Catégorie 1</option>
-                                <option>Catégorie 2</option>
-                                <option>Catégorie 3</option>
+                            {% for categorie in categories |slice(0,2) %}
+                                <option>{{ categorie.nomCat }}</option>
+                            {% endfor %}
                             </select>
                             <label for="categorie_art">Catégorie article</label>
                         </div>
