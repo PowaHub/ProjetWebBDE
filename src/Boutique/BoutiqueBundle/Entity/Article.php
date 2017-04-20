@@ -56,7 +56,7 @@ class Article
     public $media;
 
     /*/**
-     * @ORM\OneToOne(targetEntity="Boutique\BoutiqueBundle\Entity\Categorie", cascade={"persist","remove"})
+     * @ORM\ManyToOne(targetEntity="Boutique\BoutiqueBundle\Entity\Categorie", cascade={"persist","remove"})
      * @ORM\JoinColumn(nullable=true)
      */
    /* public $categorie;*/
