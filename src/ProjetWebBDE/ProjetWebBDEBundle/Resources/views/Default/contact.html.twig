@@ -6,7 +6,23 @@
         <div class="col-lg-offset-2 col-md-8 col-lg-8">
             <h2 class="h2">Contactez-nous !</h2>
             <hr>
-                
+
+            <p>Vous souhaitez nous contacter ?</p>
+
+            <form action="{{ path('contact') }}" method="post" {{ form_enctype(form) }} class="blogger">
+                {{ form_errors(form) }}
+
+                {{ form_row(form.name) }}
+                {{ form_row(form.email) }}
+                {{ form_row(form.subject) }}
+                {{ form_row(form.body) }}
+
+                {{ form_rest(form) }}
+
+                <input type="submit" value="Submit" />
+            </form>
+
+            <!--
             <form id="myform" class="cssform" action="">
 
                 <p><label for="username">Nom :</label>
@@ -29,6 +45,7 @@
                     <input type="reset" class="btn btn-default" value="Reset" />
                 </div></p>
             </form>
+            -->
 
         </div>
     </div>

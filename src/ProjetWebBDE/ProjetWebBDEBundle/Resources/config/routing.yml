@@ -13,6 +13,8 @@ bde:
 contact:
   path:  /contact
   defaults: { _controller: ProjetWebBDEBundle:Index:contact }
+  requirements:
+        _method:  GET|POST
 
 mentions_legales:
   path:  /mentions_legales

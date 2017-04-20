@@ -1,0 +1,3 @@
+parameters:
+    # Blogger contact email address
+    projet_web_bde.emails.contact_email: adam.burger@viacesi.fr
