@@ -54,6 +54,12 @@ class Article
      * @ORM\JoinColumn(nullable=true)
      */
     public $media;
+
+    /*/**
+     * @ORM\OneToOne(targetEntity="Boutique\BoutiqueBundle\Entity\Categorie", cascade={"persist","remove"})
+     * @ORM\JoinColumn(nullable=true)
+     */
+   /* public $categorie;*/
     
 
 
@@ -186,4 +192,28 @@ class Article
     {
         return $this->media;
     }
+
+    /*/**
+     * Set categorie
+     *
+     * @param \Boutique\BoutiqueBundle\Entity\Categorie $categorie
+     *
+     * @return Article
+     */
+    /*public function setCategorie(\Boutique\BoutiqueBundle\Entity\Categorie $categorie = null)
+    {
+        $this->categorie = $categorie;
+
+        return $this;
+    }
+
+    /**
+     * Get categorie
+     *
+     * @return \Boutique\BoutiqueBundle\Entity\Categorie
+     */
+    /*public function getCategorie()
+    {
+        return $this->categorie;
+    }*/
 }
