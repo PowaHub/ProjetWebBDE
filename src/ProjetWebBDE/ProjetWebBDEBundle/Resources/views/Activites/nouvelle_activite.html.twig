@@ -22,20 +22,26 @@
                 <div class="col-xs-12">
                     <div id="activity1" class="col-xs-12">
                         <form class="cssform" action="">
-                            <div class="col-xs-12">
-                                <a target="_blank" href="{{ path('activite') }}">Nom de l'activité</a>
-                                <button type="submit" class="btn btn-default btn-md" id="popupinscription">S'inscrire</button>
-                                <p><label for="comments1">Description :</label></p>
-                            </div>
+                            {% for activite in activites %}
+                                {% if "now"|date('m/d/Y') < activite.dateActivite|date('m/d/Y') %}
+                                    <div class="col-xs-12">
+                                        <a target="_blank" href="{{ path('activite') }}">Nom de l'activité</a>
+                                        <a target="_blank" href="{{ path('activite') }}">{{ activite.nomActivite }}</a>
+                                        <button type="submit" class="btn btn-default btn-md" id="popupinscription">S'inscrire</button>
+                                        <p><label for="comments1">Description :</label></p>
+                                    </div>
 
-                            <div class="col-xs-12">
-                                <div class="col-xs-12 col-md-9">
-                                    <textarea class="form-control" id="comments1" rows="5" cols="25"></textarea>
-                                </div>
-                                <div class="col-md-3">
-                                    <p align="center"><img src="{{ asset('img/logo.jpg') }}"></p>
-                                </div>
-                            </div>
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-12 col-md-9">
+                                            <textarea class="form-control" id="comments1" rows="5" cols="25"></textarea>
+                                            <p class="form-control" id="comments1" rows="5" cols="25">{{ activite.descriptionActivite }}</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <p align="center"><img src="{{ asset('img/logo.jpg') }}"></p>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
                         </form>
                     </div>
                 </div>

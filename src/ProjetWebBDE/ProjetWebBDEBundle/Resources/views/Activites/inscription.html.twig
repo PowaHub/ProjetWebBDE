@@ -1,0 +1,31 @@
+{% extends "::layout/layout.html.twig" %}
+{% block title %}Activités à venir - BDE Exia{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-xs-12 col-md-2"></div>
+
+        <div class="col-xs-12 col-md-8">
+            <h2 class="h2">Inscription à une activité</h2>
+            <hr>
+
+            {{ form_start(form) }}
+
+            <div class="col-xs-12">
+
+
+                <p><label for="activityname">Nom de l'activité :</label>
+                    {{ form_widget(form.nomActivite) }}
+                    {{ form_errors(form.nomActivite) }}</p>
+
+                <p><label for="activityplace">Pseudo :</label>
+                    {{ form_widget(form.username) }}
+                    {{ form_errors(form.username) }}</p>
+
+            </div>
+
+        </div>
+
+        <div class="col col-xs-12 col-md-2"></div>
+    </div>
+{% endblock %}

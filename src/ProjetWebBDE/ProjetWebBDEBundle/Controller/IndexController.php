@@ -62,7 +62,8 @@ class IndexController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $articles = $em->getRepository('BoutiqueBundle:Article')->findAll();
-        return $this->render('ProjetWebBDEBundle:Default:index.html.twig',array("articles"=> $articles));
+        $activites = $em->getRepository('ProjetWebBDEBundle:activite')->findAll();
+        return $this->render('ProjetWebBDEBundle:Default:index.html.twig',array("articles"=> $articles, "activites"=> $activites));
     }
     public function mentions_legalesAction()
     {
@@ -81,13 +82,15 @@ class IndexController extends Controller
 
     public function all_activiteAction()
     {
-        return $this->render('ProjetWebBDEBundle:Activites:all_activite.html.twig');
-    }
+        $em = $this->getDoctrine()->getManager();
+        $activites = $em->getRepository('ProjetWebBDEBundle:activite')->findAll();
+        return $this->render('ProjetWebBDEBundle:Activites:all_activite.html.twig',array("activites"=> $activites));    }
 
     public function ancienne_activiteAction()
     {
-        return $this->render('ProjetWebBDEBundle:Activites:ancienne_activite.html.twig');
-    }
+        $em = $this->getDoctrine()->getManager();
+        $activites = $em->getRepository('ProjetWebBDEBundle:activite')->findAll();
+        return $this->render('ProjetWebBDEBundle:Activites:ancienne_activite.html.twig',array("activites"=> $activites));    }
 
     public function creation_activiteAction()
     {
@@ -96,8 +99,9 @@ class IndexController extends Controller
 
     public function nouvelle_activiteAction()
     {
-        return $this->render('ProjetWebBDEBundle:Activites:nouvelle_activite.html.twig');
-    }
+        $em = $this->getDoctrine()->getManager();
+        $activites = $em->getRepository('ProjetWebBDEBundle:activite')->findAll();
+        return $this->render('ProjetWebBDEBundle:Activites:nouvelle_activite.html.twig',array("activites"=> $activites));    }
 
     public function proposer_activiteAction()
     {
