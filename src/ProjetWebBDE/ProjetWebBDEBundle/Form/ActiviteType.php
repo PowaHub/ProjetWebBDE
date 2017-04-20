@@ -9,6 +9,7 @@ use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\TimeType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\Regex;
 
 class ActiviteType extends AbstractType
 {
@@ -19,7 +20,8 @@ class ActiviteType extends AbstractType
     {
         $builder->add('nomActivite', TextType::class)
             ->add('lieuActivite', TextType::class)
-            ->add('prixActivite', MoneyType::class, array('scale'=>2, 'currency'=> 'EUR'))
+            ->add('prixActivite', MoneyType::class, array('scale'=>2, 'currency'=> 'EUR',
+                'constraints' => [new Regex(array('pattern'=>'/\d+(\.\d+)?/','message'=>'must be numeric')),]))
             ->add('dateActivite', DateType::class)
             ->add('heureActivite', TimeType::class)
             ->add('descriptionActivite', TextType::class)
