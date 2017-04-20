@@ -109,41 +109,21 @@
             <hr>
             <div class="row">
 
-                <div class="col-xs-offset-2 col-xs-6">
+                <div class="col-xs-offset-2 col-xs-10">
                     <h2>Les derniers articles de la boutique !</h2>
                 </div>
 
-                <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                    Article 1
-                    <img src="{{asset('img/Logo - exia.CESI - 2578x1351px -  71,0Ko.png') }}" alt="Article1" class="img-rounded">
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-default btn-md">Détails...</button>
+                {% for article in articles |slice(0,3) %}
+                    <div class="col-xs-12 col-sm-4 thumbnail">
+                        {{ article.nomArt }}
+                        <img src="{{ asset(article.media.urlMedia) }}" alt="Article1" class="img-responsive">
+                        <div class="form-group">
+                            <a type="button" class="btn btn-default btn-md" href="{{ path('article') }}">Détails ...</a>
+                        </div>
                     </div>
-                </article>
 
-                <article class="col-xs-12 col-sm-12 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5">
-                    Article 2
-                    <img src="{{asset('img/Logo - exia.CESI - 2578x1351px -  71,0Ko.png') }}" alt="Article1" class="img-rounded">
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-default btn-md">Détails...</button>
-                    </div>
-                </article>
+                {% endfor %}
 
-                <article class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                    Article 3
-                    <img src="{{asset('img/Logo - exia.CESI - 2578x1351px -  71,0Ko.png') }}" alt="Article1" class="img-rounded">
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-default btn-md">Détails...</button>
-                    </div>
-                </article>
-
-                <article class="col-xs-12 col-sm-12 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5">
-                    Article 4
-                    <img src="{{asset('img/Logo - exia.CESI - 2578x1351px -  71,0Ko.png') }}" alt="Article1" class="img-rounded">
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-default btn-md">Détails...</button>
-                    </div>
-                </article>
             </div>
         </div>
     </div>

@@ -25,7 +25,9 @@ class IndexController extends Controller
 
     public function indexAction()
     {
-        return $this->render('ProjetWebBDEBundle:Default:index.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $articles = $em->getRepository('BoutiqueBundle:Article')->findAll();
+        return $this->render('ProjetWebBDEBundle:Default:index.html.twig',array("articles"=> $articles));
     }
     public function mentions_legalesAction()
     {

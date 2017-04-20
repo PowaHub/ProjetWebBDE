@@ -29,7 +29,7 @@ class ComposerData extends AbstractFixture implements OrderedFixtureInterface
         $this->addReference('composer2',$composer2);
     }
 
-    /*php app/console doctrine:generate:entities BoutiqueBundle:Article*/
+    /*php app/console doctrine:generate:entities BoutiqueBundle:Composer*/
 
     public function getOrder()
     {

@@ -22,12 +22,13 @@ class BoutiqueController extends Controller
 
     public function articleAction()
     {
-        return $this->render('BoutiqueBundle:Default:article.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $articles = $em->getRepository('BoutiqueBundle:Article')->findAll();
+        return $this->render('BoutiqueBundle:Default:article.html.twig',array("articles"=> $articles));
     }
 
     public function boutiqueAction()
     {
-
         $em = $this->getDoctrine()->getManager();
         $articles = $em->getRepository('BoutiqueBundle:Article')->findAll();
         $categories = $em->getRepository('BoutiqueBundle:Categorie')->findAll();
