@@ -42,6 +42,8 @@ fos_user:
         address: bde@viacesi.fr
         sender_name: BDE Strasbourg
     registration:
+        form:
+            type: User\UserBundle\Form\RegistrationType
         confirmation:
             from_email:
                 address: register@bde.fr

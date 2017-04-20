@@ -5,3 +5,15 @@ user_homepage:
 user_role:
     path:     /user
     defaults: { _controller: UserBundle:roleUsers:listUsers }
+
+edit_form_BDE:
+    path:     /user/editBDE/{id}
+    defaults: { _controller: UserBundle:roleUsers:editUsersBDE }
+
+edit_form_CESI:
+    path:     /user/editCESI/{id}
+    defaults: { _controller: UserBundle:roleUsers:editUsersCESI }
+
+edit_form_ETUDIANT:
+    path:     /user/editETUDIANT/{id}
+    defaults: { _controller: UserBundle:roleUsers:editUsersETUDIANT }

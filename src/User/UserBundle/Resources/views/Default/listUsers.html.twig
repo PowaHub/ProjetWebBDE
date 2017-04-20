@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends "::layout/layout.html.twig" %}
 
 {% block body %}
 
@@ -12,8 +12,9 @@
 					<tr>
 						<th>Pseudo</th>
 						<th>Email</th>
-						<th>Update</th>
-						<th>Delete</th>
+						<th>BDE</th>
+						<th>CESI</th>
+						<th>ETUDIANT</th>
 					</tr>
 				</thead>
 				<br/>
@@ -24,8 +25,11 @@
 			            <td>{{ user.username }}</td>
 			            <td>{{ user.email }}</td>
 			            
-						<td><button href="" type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>   Modifier</button></td>
-						<td><button href="" type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>   Supprimer</button></td> 
+			            <td><a href="{{ path('edit_form_BDE', {'id': user.id}) }}"><button type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>   BDE</button></a></td>
+
+						<td><a href="{{ path('edit_form_CESI', {'id': user.id}) }}"><button type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>   CESI</button></a></td>
+						
+						<td><a href="{{ path('edit_form_ETUDIANT', {'id': user.id}) }}"><button type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>   ETUDIANT</button></a></td>
 
 			        </tr>
 			    {% endfor %}
@@ -48,8 +52,9 @@
 					<tr>
 						<th>Pseudo</th>
 						<th>Email</th>
-						<th>Update</th>
-						<th>Delete</th>
+						<th>BDE</th>
+						<th>CESI</th>
+						<th>ETUDIANT</th>
 					</tr>
 				</thead>
 				<br/>
@@ -60,8 +65,11 @@
 			            <td>{{ user.username }}</td>
 			            <td>{{ user.email }}</td>
 			            
-						<td><button href="" type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>   Modifier</button></td>
-						<td><button href="" type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>   Supprimer</button></td> 
+						<td><a href="{{ path('edit_form_BDE', {'id': user.id}) }}"><button type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>   BDE</button></a></td>
+
+						<td><a href="{{ path('edit_form_CESI', {'id': user.id}) }}"><button type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>   CESI</button></a></td>
+						
+						<td><a href="{{ path('edit_form_ETUDIANT', {'id': user.id}) }}"><button type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>   ETUDIANT</button></a></td>
 
 			        </tr>
 			    {% endfor %}
@@ -84,8 +92,9 @@
 					<tr>
 						<th>Pseudo</th>
 						<th>Email</th>
-						<th>Update</th>
-						<th>Delete</th>
+						<th>BDE</th>
+						<th>CESI</th>
+						<th>ETUDIANT</th>
 					</tr>
 				</thead>
 				<br/>
@@ -96,8 +105,11 @@
 			            <td>{{ user.username }}</td>
 			            <td>{{ user.email }}</td>
 			            
-						<td><button href="" type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>   Modifier</button></td>
-						<td><button href="" type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>   Supprimer</button></td> 
+						<td><a href="{{ path('edit_form_BDE', {'id': user.id}, {'id': user.id}) }}"><button type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>   BDE</button></a></td>
+
+						<td><a href="{{ path('edit_form_CESI', {'id': user.id}) }}"><button type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>   CESI</button></a></td>
+						
+						<td><a href="{{ path('edit_form_ETUDIANT', {'id': user.id}) }}"><button type="button" class="btn btn-danger active btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span>   ETUDIANT</button></a></td> 
 
 			        </tr>
 			    {% endfor %}
