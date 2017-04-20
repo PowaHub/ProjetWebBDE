@@ -36,8 +36,8 @@
                                             {% if is_granted("IS_AUTHENTICATED_FULLY") %}
                                                 <li><a href="{{ path('proposer_activite') }}">Proposer une activité</a></li>
                                                 <li><a href="{{ path('vote_activite') }}">Voter pour une activité</a></li>
+                                                {% if is_granted("ROLE_CESI") or is_granted("ROLE_BDE") %}
                                                 <li><a href="{{ path('creation_activite') }}">Créer une activité</a></li>
-                                                {% if is_granted('ROLE_CESI') %}
                                                 <li><a href="{{ path('validation_activite') }}">Liste des activités à valider</a></li>
                                                 {%endif%}
                                             {%endif%}

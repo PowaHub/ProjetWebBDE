@@ -3,10 +3,76 @@
 
 {% block body %}
 
+    <br>
+    <div class="row">
+        <!-- espace -->
+        <div class="col-lg-2"></div>
+        <!-- contenu de la page -->
+        <div class="col-lg-8">
+            <div class="col-xs-1"></div>
+
 
                 {{ form_start(form) }}
                 {{ form_widget(form) }}
                 {{ form_end(form) }}
 
+
+            <div class="col-xs-10">
+                <div class="col-xs-12"><h4 class="produit">Ajouter un article</h4></div>
+
+                <div class="col-xs-12">
+                    <div class="col-lg-6">
+                        <div class="form-inline">
+                            <input type="text" class="form-control" id="id_art">
+                            <label for="id_art">ID de l'article</label>
+                        </div>
+                        <div class="form-inline">
+                            <input type="text" class="form-control" id="nom_art">
+                            <label for="nom_art">Nom de l'article</label>
+                        </div>
+                        <div class="form-inline">
+                            <input type="text" class="form-control" id="prix_art">
+                            <label for="prix_art">Prix unitaire</label>
+                        </div>
+                        <div class="form-inline">
+                            <select class="form-control" id="categorie_art">
+                            {% for categorie in categories |slice(0,2) %}
+                                <option>{{ categorie.nomCat }}</option>
+                            {% endfor %}
+                            </select>
+                            <label for="categorie_art">Catégorie article</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-inline">
+                            <input type="number" class="form-control" id="quantite_art">
+                            <label for="quantite_art">Quantité</label>
+                        </div>
+                        <div class="form-inline">
+                            <input type="date" class="form-control" id="date_creation">
+                            <label for="date_creation">Date de création (jj/mm/aaaa)</label>
+                        </div>
+                        <div class="form-inline">
+                            <label for="charger_image">Charger un fichier</label>
+                            <input role="button" type="file" class="form-control-file btn btn-danger active" id="charger_image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 form-group">
+                    <label for="description">Description :</label>
+                    <textarea class="form-control" id="description"></textarea>
+                </div>
+
+                <div class="col-xs-12 form-group produit">
+                    <button type="submit" class="btn btn-danger active">Envoyer</button>
+                </div>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+        <!-- espace -->
+        <div class="col-lg-2"></div>
+    </div>
+</div>
+>>>>>>> origin/master
 
 {% endblock %}
