@@ -24,7 +24,7 @@ class ActiviteType extends AbstractType
             ->add('heureActivite', TimeType::class)
             ->add('descriptionActivite', TextType::class)
             ->add('recurrenceActivite', TextType::class)
-            ->add('media')
+            
             
         ;
     }
