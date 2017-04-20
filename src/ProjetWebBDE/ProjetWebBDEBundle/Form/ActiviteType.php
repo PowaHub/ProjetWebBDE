@@ -21,7 +21,7 @@ class ActiviteType extends AbstractType
         $builder->add('nomActivite', TextType::class)
             ->add('lieuActivite', TextType::class)
             ->add('prixActivite', MoneyType::class, array('scale'=>2, 'currency'=> 'EUR',
-                'constraints' => [new Regex(array('pattern'=>'/\d+(\.\d+)?/','message'=>'must be numeric')),]))
+                'constraints' => [new Regex(array('pattern'=>'/\d+(\.\d+)?/','message'=>'Entre un prix !')),]))
             ->add('dateActivite', DateType::class)
             ->add('heureActivite', TimeType::class)
             ->add('descriptionActivite', TextType::class)

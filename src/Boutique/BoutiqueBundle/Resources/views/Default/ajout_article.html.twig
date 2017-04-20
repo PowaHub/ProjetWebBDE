@@ -1,29 +1,81 @@
 {% extends "::layout/layout.html.twig" %}
 {% block title %}Ajout article - BDE Exia{% endblock %}
 
+
+
+
+
+
 {% block body %}
 
-                {{ form_start(form) }}
-                {{ form_widget(form) }}
+{% form_theme form _self %}
 
-                <div class="col-xs-12 form-group produit">
-                    <button type="submit" class="btn btn-danger active">Envoyer</button>
-                </div>
+{% block _tasks_entry_widget %}
 
-                {% for flash_message in app.session.flashBag.get('success') %}
-                    <div class="alert alert-success">
-                        {{ flash_message }}
+<div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+            <h2 class="h2">Ajouter un article</h2>
+            <hr>
+
+                   {{ form_start(form) }}
+
+                    <div class="row">
+
+                    
+                            <p><label>Nom de l'article :</label>
+                                {{ form_widget(form.nomArticle) }}
+                                {{ form_errors(form.nomArticle) }}</p>
+
+                            <p><label>Description de l'article :</label>
+                                {{ form_widget(form.descriptionArticle) }}
+                                {{ form_errors(form.descriptionArticle) }}</p>
+
+                            <p><label>Catégorie de l'article :</label>
+                                {{ form_widget(form.categorieArticle) }}
+                                {{ form_errors(form.categorieArticle) }}</p>
+                       
+                                        <p><label>Prix de l'article :</label>
+
+                                            {{ form_widget(form.prixArticle) }}
+                                            {{ form_errors(form.prixArticle) }}</p>
+                                
+                                        <p><label>Quantité totale de l'article :</label>
+                                            {{ form_widget(form.stockArticle) }}
+                                            {{ form_errors(form.stockArticle) }}</p>
+                              
+                                    <p><label>Image de l'article :</label>
+                                        {{ form_widget(form.media) }}
+                                        {{ form_errors(form.media) }}</p>
+                              
+                       
+                      
+                    
+                        <p align="center"><button type="submit" class="btn btn-default btn-md">Envoyer</button></p>
                     </div>
-                {% endfor %}
 
-                {% for flash_message in app.session.flashBag.get('error') %}
-                    <div class="alert alert-danger">
-                        {{ flash_message }}
-                    </div>
-                {% endfor %}
-
-                {{ form_end(form) }}
+            
+        </div>
+</div>
 
 
+
+
+    {% for flash_message in app.session.flashBag.get('success') %}
+        <div class="alert alert-success">
+            {{ flash_message }}
+        </div>
+    {% endfor %}
+
+    {% for flash_message in app.session.flashBag.get('error') %}
+        <div class="alert alert-danger">
+            {{ flash_message }}
+        </div>
+    {% endfor %}
+
+    {{ form_end(form) }}
+
+
+
+{% endblock %}
 
 {% endblock %}

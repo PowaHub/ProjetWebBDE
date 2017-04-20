@@ -10,6 +10,7 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\Regex;
 
 class ArticleType extends AbstractType
 {
@@ -24,7 +25,8 @@ class ArticleType extends AbstractType
                 'Vêtements' => 'Vêtements',
                 'Accessoires' => 'Accessoires',
             )))
-            ->add('prixArticle', MoneyType::class, array('scale'=>2, 'currency'=> 'EUR'))
+            ->add('prixArticle', MoneyType::class, array('scale'=>2, 'currency'=> 'EUR',
+                'constraints' => [new Regex(array('pattern'=>'/\d+(\.\d+)?/','message'=>'Entrez un prix !')),]))
             ->add('stockArticle', NumberType::class)
             ->add('media')
             

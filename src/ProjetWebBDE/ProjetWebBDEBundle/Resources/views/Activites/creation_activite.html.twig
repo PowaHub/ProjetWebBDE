@@ -3,12 +3,58 @@
 
 {% block body %}
 
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
+{% form_theme form _self %}
 
-    <div class="row">
-        <p align="center"><button type="submit" class="btn btn-default btn-md">Soumettre</button></p>
-    </div>
+{% block _tasks_entry_widget %}
+
+<div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+            <h2 class="h2">Créer votre propre activité !</h2>
+            <hr>
+
+                   {{ form_start(form) }}
+
+                    <div class="row">
+
+                    
+                            <p><label for="activityname">Nom de l'activité :</label>
+                                {{ form_widget(form.nomActivite) }}
+                                {{ form_errors(form.nomActivite) }}</p>
+
+                            <p><label for="activityplace">Lieu :</label>
+                                {{ form_widget(form.lieuActivite) }}
+                                {{ form_errors(form.lieuActivite) }}</p>
+
+                            <p><label for="activityprice">Prix :</label>
+                                {{ form_widget(form.prixActivite) }}
+                                {{ form_errors(form.prixActivite) }}</p>
+                       
+                                        <p><label for="activitydate1">Date :</label>
+                                            {{ form_widget(form.dateActivite) }}
+                                            {{ form_errors(form.dateActivite) }}</p>
+                                
+                                        <p><label for="activitytime1">Heure :</label>
+                                            {{ form_widget(form.heureActivite) }}
+                                            {{ form_errors(form.heureActivite) }}</p>
+                              
+                                    <p><label for="comments">L'activité est-elle récurente ? Précisez</label>
+                                        {{ form_widget(form.recurrenceActivite) }}
+                                        {{ form_errors(form.recurrenceActivite) }}</p>
+                              
+                       
+                            <p><label for="comments">Description :</label>
+                                {{ form_widget(form.descriptionActivite) }}
+                                {{ form_errors(form.descriptionActivite) }}</p>
+                      
+                    
+                        <p align="center"><button type="submit" class="btn btn-default btn-md">Soumettre</button></p>
+                    </div>
+
+            
+        </div>
+</div>
+
+
 
 
     {% for flash_message in app.session.flashBag.get('success') %}
@@ -24,5 +70,9 @@
     {% endfor %}
 
     {{ form_end(form) }}
+
+
+
+{% endblock %}
 
 {% endblock %}
