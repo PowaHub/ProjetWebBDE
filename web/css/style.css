@@ -353,7 +353,11 @@ form.blogger input[type="submit"] { margin-left: 110px; width: 508px; line-heigh
 form.blogger ul li { color: #ff0000; margin-bottom: 5px; }
 
 
-
+.activitenomart
+{
+	text-decoration: none;
+	color: black;
+}
 
 
 
