@@ -77,7 +77,9 @@ class IndexController extends Controller
 
     public function activiteAction()
     {
-        return $this->render('ProjetWebBDEBundle:Activites:activite.html.twig');
+        $em = $this->getDoctrine()->getManager();
+        $activites = $em->getRepository('ProjetWebBDEBundle:activite')->findAll();
+        return $this->render('ProjetWebBDEBundle:Activites:activite.html.twig',array("activites"=> $activites));
     }
 
     public function all_activiteAction()
