@@ -21,7 +21,9 @@
                                 {% if "now"|date('m/d/Y') < activite.dateActivite|date('m/d/Y') %}
                                     <div class="col-xs-12">
                                         <a target="_blank" href="{{ path('activite') }}">{{ activite.nomActivite }}</a>
+                                    {% if is_granted("IS_AUTHENTICATED_FULLY") %}
                                         <button type="submit" class="btn btn-default btn-md" id="popupinscription">S'inscrire</button>
+                                    {% endif %}
                                         <p><label for="comments1">Description :</label></p>
                                     </div>
 
