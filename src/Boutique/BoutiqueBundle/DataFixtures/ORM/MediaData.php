@@ -41,6 +41,12 @@ class MediaData extends AbstractFixture implements OrderedFixtureInterface
         $media5->setUrlMedia("img_boutique/sweat_bordeaux.jpg");
         $manager->persist($media5);
 
+        $media6 = new Media();
+        $media6->setNomMedia("Image Sweat Bordeaux");
+        $media6->setTypeMedia("Image");
+        $media6->setUrlMedia("img_boutique/sweat_bordeaux.jpg");
+        $manager->persist($media6);
+
         $manager->flush();
 
         $this->addReference('media1',$media1);
@@ -48,6 +54,7 @@ class MediaData extends AbstractFixture implements OrderedFixtureInterface
         $this->addReference('media3',$media3);
         $this->addReference('media4',$media4);
         $this->addReference('media5',$media5);
+        $this->addReference('media6',$media6);
     }
 
     /*php app/console doctrine:generate:entities BoutiqueBundle:Article*/
