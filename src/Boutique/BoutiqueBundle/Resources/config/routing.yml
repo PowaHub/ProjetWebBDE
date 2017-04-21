@@ -13,8 +13,12 @@ boutique:
     defaults: { _controller: BoutiqueBundle:Boutique:boutique }
 
 edition_article:
-    path:     /edition_article
-    defaults: { _controller: BoutiqueBundle:Boutique:edition_article }
+    path:     /edition_article/{id}
+    defaults: { _controller: BoutiqueBundle:Article:editArticle }
+
+list_article:
+    path:     /list_article
+    defaults: { _controller: BoutiqueBundle:Article:listArticle }
 
 ajout_article:
     path:     /ajout_article

@@ -71,7 +71,7 @@
 						<div class="btn-group-justified btn-group-sm">
 							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
 							{% if is_granted('ROLE_CESI') %}
-							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
+							<a class="btn btn-danger active" role="button" href="{{ path('edition_article', {'id':article.id}) }}">Editer</a>
 							{%endif %}
 							{% if is_granted('ROLE_CESI') %}
 							<a class="btn btn-danger active produit suppr" role="button" href="{{ path('suppression_article', {'id':article.id}) }}">Supprimer</a>
@@ -107,11 +107,11 @@
             <div class="col-xs-12 col-md-2">
 				<div class="well">
 					<h4>Panier</h4>
-					3 item - 44,99 €
+					3 item - 54,27 €
 					<div class="">
-						<p>Sweat Exia x 1 <span class="pull-right">20 €</span></p>
-						<p>Sweat sans Capuche Exia x 1 <span class="pull-right">15 €</span></p>
-						<p>Carnet Exia x 1 <span class="pull-right">9,99 €</span></p>
+						<p>Item x 1 <span class="pull-right">18,09 €</span></p>
+						<p>Item x 1 <span class="pull-right">18,09 €</span></p>
+						<p>Item x 1 <span class="pull-right">18,09 €</span></p>
 						<a href="#" class="btn btn-default">Commander</a>
 					</div>
 				</div>
