@@ -20,7 +20,7 @@
                             {% for activite in activites %}
                                 {% if "now"|date('m/d/Y') < activite.dateActivite|date('m/d/Y') %}
                                     <div class="col-xs-12">
-                                        <a target="_blank" href="{{ path('activite') }}">{{ activite.nomActivite }}</a>
+                                        <h4><a target="_blank" href="{{ path('activite') }}">{{ activite.nomActivite }}</a></h4>
                                     {% if is_granted("IS_AUTHENTICATED_FULLY") %}
                                         <button type="submit" class="btn btn-default btn-md" id="popupinscription">S'inscrire</button>
                                     {% endif %}
@@ -54,7 +54,7 @@
                             {% for activite in activites %}
                                 {% if "now"|date('m/d/Y') > activite.dateActivite|date('m/d/Y') %}
                                     <div class="col-xs-12">
-                                        <a target="_blank" href="{{ path('activite') }}">{{ activite.nomActivite }}</a>
+                                        <h4><a target="_blank" href="{{ path('activite') }}">{{ activite.nomActivite }}</a></h4>
                                         <p><label for="comments2">Description :</label></p>
                                     </div>
 
