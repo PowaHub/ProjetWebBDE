@@ -95,7 +95,7 @@
                         {{ article.nomArticle }}
                         <img src="{{ asset(article.media.urlMedia) }}" alt="Article1" class="img-responsive">
                         <div class="form-group">
-                            <a type="button" class="btn btn-default btn-md" href="{{ path('article') }}">Détails ...</a>
+                            <a type="button" class="btn btn-default btn-md" href="{{ path('article', {'id':article.id}) }}">Détails ...</a>
                         </div>
                     </div>
                 {% endfor %}

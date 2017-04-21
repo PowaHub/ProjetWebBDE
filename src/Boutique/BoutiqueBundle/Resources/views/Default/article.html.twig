@@ -27,7 +27,7 @@
                     <div class="btn-group-justified btn-group-sm">
                         <a class="btn btn-default" role="button" href="">Ajouter au panier</a>
                         {% if is_granted('ROLE_CESI') %}
-                            <a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
+                            <a class="btn btn-danger active" role="button" href="{{ path('edition_article', {'id':article.id}) }}">Editer</a>
                         {% endif %}
                         {% if is_granted('ROLE_CESI') %}
                             <a class="btn btn-danger active" role="button" href="{{ path('suppression_article', {'id':article.id}) }}">Supprimer</a>
