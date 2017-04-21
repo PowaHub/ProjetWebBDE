@@ -9,20 +9,21 @@
             <h2 class="h2">Détails de l'activité :</h2>
             <hr>
 
+    {% for activite in activites |slice(0,1) %}
             <div class="col-xs-12">
                 <div class="col-xs-12 col-md-6">
                     <p><label for="activityname">Nom de l'activité :</label>
-                        <input class="form-control" type="text" id="activityname" value="" /></p>
+                        <input class="form-control" type="text" id="activityname" value="{{ activite.nomActivite }}" /></p>
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <div class="col-xs-12 col-md-offset-1 col-md-11">
                         <div class="col-xs-6">
-                            <p><label for="activitydate1">Date activité :</label>
-                                <input class="form-control" type="date" id="activitydate1" value="" /></p>
+                            <p><label for="activitydate1">Date :</label>
+                                <input class="form-control" type="date" id="activitydate1" value="{{ activite.dateActivite|date('m/d/Y') }}" /></p>
                         </div>
                         <div class="col-xs-6">
                             <p><label for="activitytime1">Heure :</label>
-                                <input class="form-control" type="time" id="activitytime1" value="" /></p>
+                                <input class="form-control" type="time" id="activitytime1" value="{{ activite.heureActivite|date('H:i') }}" /></p>
                         </div>
                     </div>
                 </div>
@@ -74,14 +75,15 @@
                 <div id="activity1" class="col-xs-12">
                     <form class="cssform" action="">
                         <div class="col-xs-12">
-                            <p><label for="comments1">Description :</label></p>
+                            <p><label for="comments1">Description de l'activité :</label></p>
                         </div>
                         <div class="col-xs-12">
-                            <textarea class="form-control" id="comments1" rows="5" cols="25"></textarea>
+                            <textarea class="form-control" id="comments1" rows="5" cols="25">{{ activite.descriptionActivite }}</textarea>
                         </div>
                     </form>
                 </div>
             </div>
+        {% endfor %}
 
 
         </div>
