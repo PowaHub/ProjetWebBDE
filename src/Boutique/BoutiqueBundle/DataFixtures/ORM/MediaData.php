@@ -42,9 +42,9 @@ class MediaData extends AbstractFixture implements OrderedFixtureInterface
         $manager->persist($media5);
 
         $media6 = new Media();
-        $media6->setNomMedia("Image Sweat Bordeaux");
+        $media6->setNomMedia("Image Sweat Exia 2016");
         $media6->setTypeMedia("Image");
-        $media6->setUrlMedia("img_boutique/sweat_bordeaux.jpg");
+        $media6->setUrlMedia("img_boutique/sweat2016png.png");
         $manager->persist($media6);
 
         $manager->flush();

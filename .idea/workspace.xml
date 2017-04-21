@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b373b066-fa62-4b3e-b982-74f2f13e02f4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ArticleData.php" afterPath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ArticleData.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/FactureData.php" afterPath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/FactureData.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/MediaData.php" afterPath="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/MediaData.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,20 +44,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MediaData.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MediaData.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/MediaData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+            <state relative-caret-position="525">
+              <caret line="46" column="62" lean-forward="false" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticleData.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArticleData.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ArticleData.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
+            <state relative-caret-position="968">
               <caret line="61" column="16" lean-forward="false" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
               <folding />
             </state>
@@ -184,9 +182,9 @@
         <option value="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Activites/all_activite.html.twig" />
         <option value="$PROJECT_DIR$/src/ProjetWebBDE/ProjetWebBDEBundle/Resources/views/Activites/activite.html.twig" />
-        <option value="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/MediaData.php" />
         <option value="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ArticleData.php" />
         <option value="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/FactureData.php" />
+        <option value="$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/MediaData.php" />
       </list>
     </option>
   </component>
@@ -656,7 +654,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47882000" />
+    <option name="totallyTimeSpent" value="49108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1020,14 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/MediaData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/FactureData.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -1046,8 +1036,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/ArticleData.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
+        <state relative-caret-position="968">
           <caret line="61" column="16" lean-forward="false" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Boutique/BoutiqueBundle/DataFixtures/ORM/MediaData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="46" column="62" lean-forward="false" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
           <folding />
         </state>
       </provider>
