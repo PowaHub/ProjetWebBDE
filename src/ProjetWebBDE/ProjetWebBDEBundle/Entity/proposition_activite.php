@@ -26,42 +26,42 @@ class proposition_activite
      *
      * @ORM\Column(name="nom_prop", type="string", length=255)
      */
-    private $nomProp;
+    private $nomProposition;
 
     /**
      * @var string
      *
      * @ORM\Column(name="description_prop", type="string", length=255)
      */
-    private $descriptionProp;
+    private $descriptionProposition;
 
     /**
      * @var string
      *
      * @ORM\Column(name="lieu_prop", type="string", length=255)
      */
-    private $lieuProp;
+    private $lieuProposition;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="date1_prop", type="datetime")
      */
-    private $date1Prop;
+    private $date1Proposition;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="date2_prop", type="datetime")
      */
-    private $date2Prop;
+    private $date2Proposition;
 
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="date3_prop", type="datetime")
      */
-    private $date3Prop;
+    private $date3Proposition;
 
     /**
      * @var int
@@ -89,14 +89,14 @@ class proposition_activite
      *
      * @ORM\Column(name="prix_prop", type="float")
      */
-    private $prixProp;
+    private $prixProposition;
 
     /**
      * @var bool
      *
      * @ORM\Column(name="recurrence_prop", type="boolean")
      */
-    private $recurrenceProp;
+    private $recurrenceProposition;
 
     /**
      * @var string
@@ -106,10 +106,12 @@ class proposition_activite
     private $recurrenceComm;
 
 
+
+
     /**
      * Get id
      *
-     * @return int
+     * @return integer
      */
     public function getId()
     {
@@ -117,147 +119,147 @@ class proposition_activite
     }
 
     /**
-     * Set nomProp
+     * Set nomProposition
      *
-     * @param string $nomProp
+     * @param string $nomProposition
      *
      * @return proposition_activite
      */
-    public function setNomProp($nomProp)
+    public function setNomProposition($nomProposition)
     {
-        $this->nomProp = $nomProp;
+        $this->nomProposition = $nomProposition;
 
         return $this;
     }
 
     /**
-     * Get nomProp
+     * Get nomProposition
      *
      * @return string
      */
-    public function getNomProp()
+    public function getNomProposition()
     {
-        return $this->nomProp;
+        return $this->nomProposition;
     }
 
     /**
-     * Set descriptionProp
+     * Set descriptionProposition
      *
-     * @param string $descriptionProp
+     * @param string $descriptionProposition
      *
      * @return proposition_activite
      */
-    public function setDescriptionProp($descriptionProp)
+    public function setDescriptionProposition($descriptionProposition)
     {
-        $this->descriptionProp = $descriptionProp;
+        $this->descriptionProposition = $descriptionProposition;
 
         return $this;
     }
 
     /**
-     * Get descriptionProp
+     * Get descriptionProposition
      *
      * @return string
      */
-    public function getDescriptionProp()
+    public function getDescriptionProposition()
     {
-        return $this->descriptionProp;
+        return $this->descriptionProposition;
     }
 
     /**
-     * Set lieuProp
+     * Set lieuProposition
      *
-     * @param string $lieuProp
+     * @param string $lieuProposition
      *
      * @return proposition_activite
      */
-    public function setLieuProp($lieuProp)
+    public function setLieuProposition($lieuProposition)
     {
-        $this->lieuProp = $lieuProp;
+        $this->lieuProposition = $lieuProposition;
 
         return $this;
     }
 
     /**
-     * Get lieuProp
+     * Get lieuProposition
      *
      * @return string
      */
-    public function getLieuProp()
+    public function getLieuProposition()
     {
-        return $this->lieuProp;
+        return $this->lieuProposition;
     }
 
     /**
-     * Set date1Prop
+     * Set date1Proposition
      *
-     * @param \DateTime $date1Prop
+     * @param \DateTime $date1Proposition
      *
      * @return proposition_activite
      */
-    public function setDate1Prop($date1Prop)
+    public function setDate1Proposition($date1Proposition)
     {
-        $this->date1Prop = $date1Prop;
+        $this->date1Proposition = $date1Proposition;
 
         return $this;
     }
 
     /**
-     * Get date1Prop
+     * Get date1Proposition
      *
      * @return \DateTime
      */
-    public function getDate1Prop()
+    public function getDate1Proposition()
     {
-        return $this->date1Prop;
+        return $this->date1Proposition;
     }
 
     /**
-     * Set date2Prop
+     * Set date2Proposition
      *
-     * @param \DateTime $date2Prop
+     * @param \DateTime $date2Proposition
      *
      * @return proposition_activite
      */
-    public function setDate2Prop($date2Prop)
+    public function setDate2Proposition($date2Proposition)
     {
-        $this->date2Prop = $date2Prop;
+        $this->date2Proposition = $date2Proposition;
 
         return $this;
     }
 
     /**
-     * Get date2Prop
+     * Get date2Proposition
      *
      * @return \DateTime
      */
-    public function getDate2Prop()
+    public function getDate2Proposition()
     {
-        return $this->date2Prop;
+        return $this->date2Proposition;
     }
 
     /**
-     * Set date3Prop
+     * Set date3Proposition
      *
-     * @param \DateTime $date3Prop
+     * @param \DateTime $date3Proposition
      *
      * @return proposition_activite
      */
-    public function setDate3Prop($date3Prop)
+    public function setDate3Proposition($date3Proposition)
     {
-        $this->date3Prop = $date3Prop;
+        $this->date3Proposition = $date3Proposition;
 
         return $this;
     }
 
     /**
-     * Get date3Prop
+     * Get date3Proposition
      *
      * @return \DateTime
      */
-    public function getDate3Prop()
+    public function getDate3Proposition()
     {
-        return $this->date3Prop;
+        return $this->date3Proposition;
     }
 
     /**
@@ -277,7 +279,7 @@ class proposition_activite
     /**
      * Get comptDate1
      *
-     * @return int
+     * @return integer
      */
     public function getComptDate1()
     {
@@ -301,7 +303,7 @@ class proposition_activite
     /**
      * Get comptDate2
      *
-     * @return int
+     * @return integer
      */
     public function getComptDate2()
     {
@@ -325,7 +327,7 @@ class proposition_activite
     /**
      * Get comptDate3
      *
-     * @return int
+     * @return integer
      */
     public function getComptDate3()
     {
@@ -333,51 +335,51 @@ class proposition_activite
     }
 
     /**
-     * Set prixProp
+     * Set prixProposition
      *
-     * @param integer $prixProp
+     * @param float $prixProposition
      *
      * @return proposition_activite
      */
-    public function setPrixProp($prixProp)
+    public function setPrixProposition($prixProposition)
     {
-        $this->prixProp = $prixProp;
+        $this->prixProposition = $prixProposition;
 
         return $this;
     }
 
     /**
-     * Get prixProp
+     * Get prixProposition
      *
-     * @return int
+     * @return float
      */
-    public function getPrixProp()
+    public function getPrixProposition()
     {
-        return $this->prixProp;
+        return $this->prixProposition;
     }
 
     /**
-     * Set recurrenceProp
+     * Set recurrenceProposition
      *
-     * @param boolean $recurrenceProp
+     * @param boolean $recurrenceProposition
      *
      * @return proposition_activite
      */
-    public function setRecurrenceProp($recurrenceProp)
+    public function setRecurrenceProposition($recurrenceProposition)
     {
-        $this->recurrenceProp = $recurrenceProp;
+        $this->recurrenceProposition = $recurrenceProposition;
 
         return $this;
     }
 
     /**
-     * Get recurrenceProp
+     * Get recurrenceProposition
      *
-     * @return bool
+     * @return boolean
      */
-    public function getRecurrenceProp()
+    public function getRecurrenceProposition()
     {
-        return $this->recurrenceProp;
+        return $this->recurrenceProposition;
     }
 
     /**

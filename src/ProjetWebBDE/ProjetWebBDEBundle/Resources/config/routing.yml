@@ -46,7 +46,7 @@ nouvelle_activite:
 
 proposer_activite:
   path:  /proposer_activite
-  defaults: { _controller: ProjetWebBDEBundle:Index:proposer_activite }
+  defaults: { _controller: ProjetWebBDEBundle:Proposition:addProposition }
 
 validation_activite:
   path:  /validation_activite
