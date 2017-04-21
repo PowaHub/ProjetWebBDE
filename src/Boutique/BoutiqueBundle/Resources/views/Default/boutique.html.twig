@@ -74,7 +74,7 @@
 							<a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
 							{%endif %}
 							{% if is_granted('ROLE_CESI') %}
-							<a class="btn btn-danger active produit suppr" role="button" href="">Supprimer</a>
+							<a class="btn btn-danger active produit suppr" role="button" href="{{ path('suppression_article', {'id':article.id}) }}">Supprimer</a>
 							{%endif %}
 						</div>
 					</div>
@@ -83,6 +83,26 @@
 
             </div>
 
+
+
+
+        <div class="popupconfirmation" title="Titre de la fenêtre">
+    		<p>Désirez-vous vraiment supprimer cet item ?</p>
+		</div>
+
+		{% for flash_message in app.session.flashBag.get('success') %}
+			    <div class="alert alert-success">
+			        {{ flash_message }}
+			    </div>
+			{% endfor %}
+
+			{% for flash_message in app.session.flashBag.get('error') %}
+			    <div class="alert alert-danger">
+			        {{ flash_message }}
+			    </div>
+			{% endfor %}
+
+            
 			<!-- Panier -->
             <div class="col-xs-12 col-md-2">
 				<div class="well">
@@ -97,8 +117,4 @@
 				</div>
 			</div>
         </div>
-
-        <div class="popupconfirmation" title="Titre de la fenêtre">
-    		<p>Désirez-vous vraiment supprimer cet item ?</p>
-		</div>
 {% endblock %}

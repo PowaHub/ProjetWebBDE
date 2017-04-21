@@ -20,3 +20,6 @@ ajout_article:
     path:     /ajout_article
     defaults: { _controller: BoutiqueBundle:Article:addArticle }
 
+suppression_article:
+    path:     /suppression_article/{id}
+    defaults: { _controller: BoutiqueBundle:Article:deleteArticle }

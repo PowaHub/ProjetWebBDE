@@ -45,5 +45,23 @@ class ArticleController extends Controller
             ));
     }
 
+    public function deleteArticleAction(Article $article)
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $em->remove($article);
+
+        $em->flush();
+
+            $this->addFlash(
+                    'success',
+                    'Vous article a bien été supprimé !'
+            );
+
+        return $this->redirectToRoute("boutique");
+
+
+    }
+
 
 }
