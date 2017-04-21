@@ -38,11 +38,21 @@ class ArticleData extends AbstractFixture implements OrderedFixtureInterface
         $article3->setCategorieArticle($this->getReference('categorie1'));
         $manager->persist($article3);
 
+        $article4 = new Article();
+        $article4->setNomArticle("Sweat Capuche Exia Bordeaux");
+        $article4->setDescriptionArticle("Sweat vendu par le cesi exia.");
+        $article4->setPrixArticle(20);
+        $article4->setStockArticle(100);
+        $article4->setMedia($this->getReference('media5'));
+        $article4->setCategorieArticle($this->getReference('categorie1'));
+        $manager->persist($article4);
+
         $manager->flush();
 
         $this->addReference('article1',$article1);
         $this->addReference('article2',$article2);
         $this->addReference('article3',$article3);
+        $this->addReference('article4',$article4);
     }
 
         /*php app/console doctrine:generate:entities BoutiqueBundle:Article*/
