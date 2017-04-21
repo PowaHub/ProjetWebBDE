@@ -69,7 +69,7 @@
 						<br>
 						<!-- barre de boutons pour la gestion -->
 						<div class="btn-group-justified btn-group-sm">
-							<a class="btn btn-default" role="button" href="{{ path('article') }}">Détail</a>
+							<a class="btn btn-default" role="button" href="{{ path('article', {'id':article.id}) }}">Détail</a>
 							{% if is_granted('ROLE_CESI') %}
 							<a class="btn btn-danger active" role="button" href="{{ path('edition_article', {'id':article.id}) }}">Editer</a>
 							{%endif %}

@@ -75,11 +75,11 @@ class IndexController extends Controller
         return $this->render('ProjetWebBDEBundle:Default:photo.html.twig');
     }
 
-    public function activiteAction()
+    public function activiteAction($id)
     {
         $em = $this->getDoctrine()->getManager();
-        $activites = $em->getRepository('ProjetWebBDEBundle:activite')->findAll();
-        return $this->render('ProjetWebBDEBundle:Activites:activite.html.twig',array("activites"=> $activites));
+        $activite = $em->getRepository('ProjetWebBDEBundle:activite')->find($id);
+        return $this->render('ProjetWebBDEBundle:Activites:activite.html.twig',array("activite"=> $activite));
     }
 
     public function all_activiteAction()

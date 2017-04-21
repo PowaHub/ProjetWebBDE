@@ -14,7 +14,7 @@
 
                 <!-- Illustration de l'article -->
                 <div class="col-xs-12 col-sm-4">
-                    <img src="{{asset('img/logo2.jpg') }}" class="img-responsive">
+                    <img src="{{ asset(article.media.urlMedia) }}" class="img-responsive">
                 </div>
 
                 <!-- Espace -->
@@ -22,28 +22,24 @@
 
                 <!-- Détails de l'article -->
                 <div class="col-xs-12 col-sm-7">
-                    <h3>Nom de l'article</h3>
-                    <p>Prix</p>
+                    <h3>{{ article.nomArticle }}</h3>
+                    <p>{{ article.prixArticle }} €</p>
                     <div class="btn-group-justified btn-group-sm">
                         <a class="btn btn-default" role="button" href="">Ajouter au panier</a>
                         {% if is_granted('ROLE_CESI') %}
-                            <a class="btn btn-danger active" role="button" href="editer_article.html">Editer</a>
+                            <a class="btn btn-danger active" role="button" href="{{ path('edition_article') }}">Editer</a>
                         {% endif %}
                         {% if is_granted('ROLE_CESI') %}
-                            <a class="btn btn-danger active" role="button" href="">Supprimer</a>
+                            <a class="btn btn-danger active" role="button" href="{{ path('suppression_article', {'id':article.id}) }}">Supprimer</a>
                         {% endif %}
                     </div>
-                </div>
-                <div class="col-xs-12">
-                    <p></p>
-                </div>
-                <!-- Descriptions de l'article -->
-                <div class="col-xs-12">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        It has survived not only five centuries, but also the leap into electronic typesetting,
-                        remaining essentially unchanged.</p>
+                    <div class="col-xs-12">
+                        <p></p>
+                    </div>
+                    <!-- Descriptions de l'article -->
+                    <div class="col-xs-12">
+                        <p>{{ article.descriptionArticle }}</p>
+                    </div>
                 </div>
             </div>
         </div>

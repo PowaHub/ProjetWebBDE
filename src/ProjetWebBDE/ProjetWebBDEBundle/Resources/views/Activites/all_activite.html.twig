@@ -20,7 +20,7 @@
                             {% for activite in activites %}
                                 {% if "now"|date('m/d/Y') < activite.dateActivite|date('m/d/Y') %}
                                     <div class="col-xs-12">
-                                        <h4><a target="_blank" href="{{ path('activite') }}" class="activitenomart">{{ activite.nomActivite }}</a></h4>
+                                        <h4><a target="_blank" href="{{ path('activite', {'id':activite.id}) }}" class="activitenomart">{{ activite.nomActivite }}</a></h4>
                                         <h5>{{ activite.dateActivite|date('d/m/Y') }}</h5>
                                     {% if is_granted("IS_AUTHENTICATED_FULLY") %}
                                         <button type="submit" class="btn btn-default btn-md" id="popupinscription">S'inscrire</button>
@@ -54,14 +54,14 @@
                             {% for activite in activites %}
                                 {% if "now"|date('m/d/Y') > activite.dateActivite|date('m/d/Y') %}
                                     <div class="col-xs-12">
-                                        <h4><a target="_blank" href="{{ path('activite') }}" class="activitenomart">{{ activite.nomActivite }}</a></h4>
+                                        <h4><a target="_blank" href="{{ path('activite', {'id':activite.id}) }}" class="activitenomart">{{ activite.nomActivite }}</a></h4>
                                         <h5>{{ activite.dateActivite|date('d/m/Y') }}</h5>
                                         <p><label for="comments2">Description :</label></p>
                                     </div>
 
                                     <div class="col-xs-12">
                                         <div class="col-xs-12 col-md-9">
-                                            <p class="form-control" id="comments2" rows="5" cols="25">{{ activite.descriptionActivite }}</p>
+                                            <textarea class="form-control" id="comments2" rows="5" cols="25">{{ activite.descriptionActivite }}</textarea>
                                         </div>
                                         <div class="col-md-3">
                                             <p align="center"><img src="{{ asset('img/logo.jpg') }}"></p>

@@ -25,7 +25,7 @@ photo:
   defaults: { _controller: ProjetWebBDEBundle:Index:photo }
 
 activite:
-  path:  /activite
+  path:  /activite/{id}
   defaults: { _controller: ProjetWebBDEBundle:Index:activite }
 
 all_activite:

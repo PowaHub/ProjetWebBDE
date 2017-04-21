@@ -20,11 +20,11 @@ class BoutiqueController extends Controller
         return $this->render('BoutiqueBundle:Default:ajout_categorie.html.twig');
     }
 
-    public function articleAction()
+    public function articleAction($id)
     {
         $em = $this->getDoctrine()->getManager();
-        $articles = $em->getRepository('BoutiqueBundle:Article')->findAll();
-        return $this->render('BoutiqueBundle:Default:article.html.twig',array("articles"=> $articles));
+        $article = $em->getRepository('BoutiqueBundle:Article')->find($id);
+        return $this->render('BoutiqueBundle:Default:article.html.twig',array("article"=> $article));
     }
 
     public function boutiqueAction()

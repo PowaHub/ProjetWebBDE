@@ -5,7 +5,7 @@ ajout_categorie:
     defaults: { _controller: BoutiqueBundle:Boutique:ajout_categorie }
 
 article:
-    path:     /article
+    path:     /article/{id}
     defaults: { _controller: BoutiqueBundle:Boutique:article }
 
 boutique:
